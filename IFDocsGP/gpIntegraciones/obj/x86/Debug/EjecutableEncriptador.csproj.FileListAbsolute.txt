@@ -1,0 +1,15 @@
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\EjecutableEncriptador.exe
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\EjecutableEncriptador.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\EjecutableEncriptador.winformGeneraFE.resources
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\EjecutableEncriptador.Properties.Resources.resources
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\GenerateResource-ResGen.read.5.tlog
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\bin\x86\Debug\EjecutableEncriptador.exe
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\bin\x86\Debug\EjecutableEncriptador.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\bin\x86\Debug\Comun.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\bin\x86\Debug\MaquinaDeEstados.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\bin\x86\Debug\MyGeneration.dOOdads_2005.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\bin\x86\Debug\Comun.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\EjecutableEncriptador\bin\x86\Debug\MaquinaDeEstados.pdb

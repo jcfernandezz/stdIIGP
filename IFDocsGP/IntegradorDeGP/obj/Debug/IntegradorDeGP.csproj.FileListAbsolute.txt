@@ -1,0 +1,74 @@
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EPPlus.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EPPlus.xml
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EPPlus.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.Serialization.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EPPlus.xml
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\MyGeneration.dOOdads_2005.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.Serialization.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EPPlus.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\MyGeneration.dOOdads_2005.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EPPlus.xml
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.Serialization.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll.config
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EntityFramework.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EntityFramework.SqlServer.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EntityFramework.xml
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\IntegradorDeGP\bin\Debug\EntityFramework.SqlServer.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll.config
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.SqlServer.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EPPlus.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.Serialization.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\MyGeneration.dOOdads_2005.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.SqlServer.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EPPlus.xml

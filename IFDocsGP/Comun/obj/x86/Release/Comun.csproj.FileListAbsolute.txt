@@ -1,0 +1,5 @@
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\bin\x86\Release\Comun.dll
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\bin\x86\Release\Comun.pdb
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\obj\x86\Release\ResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\obj\x86\Release\Comun.dll
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\obj\x86\Release\Comun.pdb
