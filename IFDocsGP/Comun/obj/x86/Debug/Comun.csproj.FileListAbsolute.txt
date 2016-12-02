@@ -1,0 +1,15 @@
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\Comun\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\Comun\obj\x86\Debug\Comun.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\Comun\obj\x86\Debug\Comun.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\Comun\bin\x86\Debug\Comun.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\Comun\bin\x86\Debug\Comun.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\bin\x86\Debug\Comun.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\bin\x86\Debug\Comun.pdb
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\obj\x86\Debug\Comun.dll
+C:\JCTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\Comun\obj\x86\Debug\Comun.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\bin\x86\Debug\Comun.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\bin\x86\Debug\Comun.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\obj\x86\Debug\Comun.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\obj\x86\Debug\Comun.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\obj\x86\Debug\Comun.pdb

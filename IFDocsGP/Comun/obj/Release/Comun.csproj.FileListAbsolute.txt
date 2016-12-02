@@ -1,0 +1,18 @@
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\bin\Release\Comun.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\bin\Release\Comun.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\obj\Release\Comun.dll
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\obj\Release\Comun.pdb
+C:\jcTii\Desarrollo\BOL_RendicionesDeCaja\E_Implementation\IFComprasGP\Comun\obj\Release\Comun.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\Comun\bin\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\Comun\bin\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\Comun\obj\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\IFComprasGP\Comun\obj\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\Comun\bin\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\Comun\bin\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\Comun\obj\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazFacturasCompra\E. Implementation\IFComprasGP\Comun\obj\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\bin\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\bin\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\obj\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\obj\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\obj\Release\Comun.csprojResolveAssemblyReference.cache

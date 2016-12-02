@@ -1,0 +1,57 @@
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\bin\Debug\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\bin\Debug\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\obj\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\obj\Debug\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\obj\Debug\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\bin\Release\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\bin\Release\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\obj\Release\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\obj\Release\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\FacturaDigitalMexico\Comun\obj\Release\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\Release\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\Release\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\Release\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\Release\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\Release\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\x86\Debug\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\x86\Debug\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\x86\Debug\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\x86\Debug\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Ionic.Zip.Reduced.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\Release\Ionic.Zip.Reduced.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\x86\Release\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\x86\Release\Comun.pdb
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\bin\x86\Release\Ionic.Zip.Reduced.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\x86\Release\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\x86\Release\Comun.dll
+C:\JCTii\Desarrollo\GETTY Factura Electrónica\E. Implementation\MxFElctr_Aplicación\Comun\obj\x86\Release\Comun.pdb
+C:\JCTii\Desarrollo\MEX Factura electrónica cfdi\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\MEX Factura electrónica cfdi\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.dll
+C:\JCTii\Desarrollo\MEX Factura electrónica cfdi\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.dll
+C:\JCTii\Desarrollo\MEX Factura electrónica cfdi\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.pdb
+C:\JCTii\Desarrollo\MEX Factura electrónica cfdi\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Ionic.Zip.Reduced.dll
+C:\JCTii\Desarrollo\MEX Factura electrónica cfdi\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.pdb
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.pdb
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E. Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Ionic.Zip.Reduced.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E. Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.pdb
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Comun.pdb
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\bin\Debug\Ionic.Zip.Reduced.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\obj\Debug\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\obj\Debug\Comun.pdb
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\bin\Release\Comun.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\bin\Release\Comun.pdb
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\bin\Release\Ionic.Zip.Reduced.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\obj\Release\ResolveAssemblyReference.cache
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\obj\Release\Comun.dll
+C:\JCTii\Desarrollo\MEX_Factura_digital_cfdi\E_Implementation\MxFElctr_Aplicación\Comun\obj\Release\Comun.pdb

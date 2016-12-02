@@ -1,0 +1,16 @@
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\IntegraFCGP.exe.config
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\obj\x86\Release\ResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\obj\x86\Release\gp.InterfacesPersonalizadas.winformGeneraFE.resources
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\obj\x86\Release\gp.InterfacesPersonalizadas.Properties.Resources.resources
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\obj\x86\Release\GenerateResource.read.1.tlog
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\obj\x86\Release\GenerateResource.write.1.tlog
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\IntegraFCGP.exe
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\IntegraFCGP.pdb
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\Comun.dll
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\CLManipulaArchivos.dll
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\Comun.pdb
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\bin\x86\Release\CLManipulaArchivos.pdb
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\obj\x86\Release\IntegraFCGP.exe
+C:\jcTii\Desarrollo\PERU_InterfazFacturasCompra\E_Implementation\IFComprasGP\gpIntegraciones\obj\x86\Release\IntegraFCGP.pdb

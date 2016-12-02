@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RM00101">
+    <Key>
+      <PropertyRef Name="CUSTNMBR" />
+    </Key>
+    <Property Name="CUSTNMBR" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CUSTNAME" Type="String" MaxLength="65" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CUSTCLAS" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CPRCSTNM" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CNTCPRSN" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="STMTNAME" Type="String" MaxLength="65" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SHRTNAME" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ADRSCODE" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="UPSZONE" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SHIPMTHD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TAXSCHID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ADDRESS1" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ADDRESS2" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ADDRESS3" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="COUNTRY" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CITY" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="STATE" Type="String" MaxLength="29" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ZIP" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PHONE1" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PHONE2" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PHONE3" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FAX" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PRBTADCD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PRSTADCD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="STADDRCD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SLPRSNID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CHEKBKID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="PYMTRMID" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CRLMTTYP" Type="Int16" Nullable="false" />
+    <Property Name="CRLMTAMT" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+    <Property Name="CRLMTPER" Type="Int16" Nullable="false" />
+    <Property Name="CRLMTPAM" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+    <Property Name="CURNCYID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RATETPID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CUSTDISC" Type="Int16" Nullable="false" />
+    <Property Name="PRCLEVEL" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="MINPYTYP" Type="Int16" Nullable="false" />
+    <Property Name="MINPYDLR" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+    <Property Name="MINPYPCT" Type="Int16" Nullable="false" />
+    <Property Name="FNCHATYP" Type="Int16" Nullable="false" />
+    <Property Name="FNCHPCNT" Type="Int16" Nullable="false" />
+    <Property Name="FINCHDLR" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+    <Property Name="MXWOFTYP" Type="Int16" Nullable="false" />
+    <Property Name="MXWROFAM" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+    <Property Name="COMMENT1" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="COMMENT2" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="USERDEF1" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="USERDEF2" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TAXEXMT1" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TAXEXMT2" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="TXRGNNUM" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="BALNCTYP" Type="Int16" Nullable="false" />
+    <Property Name="STMTCYCL" Type="Int16" Nullable="false" />
+    <Property Name="BANKNAME" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="BNKBRNCH" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="SALSTERR" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DEFCACTY" Type="Int16" Nullable="false" />
+    <Property Name="RMCSHACC" Type="Int32" Nullable="false" />
+    <Property Name="RMARACC" Type="Int32" Nullable="false" />
+    <Property Name="RMSLSACC" Type="Int32" Nullable="false" />
+    <Property Name="RMIVACC" Type="Int32" Nullable="false" />
+    <Property Name="RMCOSACC" Type="Int32" Nullable="false" />
+    <Property Name="RMTAKACC" Type="Int32" Nullable="false" />
+    <Property Name="RMAVACC" Type="Int32" Nullable="false" />
+    <Property Name="RMFCGACC" Type="Int32" Nullable="false" />
+    <Property Name="RMWRACC" Type="Int32" Nullable="false" />
+    <Property Name="RMSORACC" Type="Int32" Nullable="false" />
+    <Property Name="FRSTINDT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="INACTIVE" Type="Byte" Nullable="false" />
+    <Property Name="HOLD" Type="Byte" Nullable="false" />
+    <Property Name="CRCARDID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CRCRDNUM" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="CCRDXPDT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="KPDSTHST" Type="Byte" Nullable="false" />
+    <Property Name="KPCALHST" Type="Byte" Nullable="false" />
+    <Property Name="KPERHIST" Type="Byte" Nullable="false" />
+    <Property Name="KPTRXHST" Type="Byte" Nullable="false" />
+    <Property Name="NOTEINDX" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+    <Property Name="CREATDDT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MODIFDT" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Revalue_Customer" Type="Byte" Nullable="false" />
+    <Property Name="Post_Results_To" Type="Int16" Nullable="false" />
+    <Property Name="FINCHID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GOVCRPID" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="GOVINDID" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DISGRPER" Type="Int16" Nullable="false" />
+    <Property Name="DUEGRPER" Type="Int16" Nullable="false" />
+    <Property Name="DOCFMTID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Send_Email_Statements" Type="Byte" Nullable="false" />
+    <Property Name="USERLANG" Type="Int16" Nullable="false" />
+    <Property Name="GPSFOINTEGRATIONID" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="INTEGRATIONSOURCE" Type="Int16" Nullable="false" />
+    <Property Name="INTEGRATIONID" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ORDERFULFILLDEFAULT" Type="Int16" Nullable="false" />
+    <Property Name="CUSTPRIORITY" Type="Int16" Nullable="false" />
+    <Property Name="CCode" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DECLID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="RMOvrpymtWrtoffAcctIdx" Type="Int32" Nullable="false" />
+    <Property Name="SHIPCOMPLETE" Type="Byte" Nullable="false" />
+    <Property Name="CBVAT" Type="Byte" Nullable="false" />
+    <Property Name="INCLUDEINDP" Type="Byte" Nullable="false" />
+    <Property Name="DEX_ROW_TS" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DEX_ROW_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityContainer Name="GPEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RM00101" EntityType="Self.RM00101" />
+  </EntityContainer>
+</Schema>

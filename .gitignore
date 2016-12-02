@@ -1,0 +1,6 @@
+*.dll
+*.cache
+*.pdb
+*.exe
+*.tlog
+*.force
