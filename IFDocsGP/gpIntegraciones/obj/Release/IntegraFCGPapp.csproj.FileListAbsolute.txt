@@ -82,3 +82,6 @@ C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpInt
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpIntegraciones\obj\Release\gp.InterfacesPersonalizadas.Properties.Resources.resources
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGPapp.csproj.GenerateResource.Cache
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpIntegraciones\bin\Release\System.Web.Services.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegraFCGP.exe.config
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.exe
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.pdb

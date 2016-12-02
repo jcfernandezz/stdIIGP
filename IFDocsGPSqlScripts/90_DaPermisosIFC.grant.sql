@@ -35,6 +35,10 @@ grant select on nfRET_GL00060 to rol_InterfazCompras;
 
 --datos impositivos loc Bolivia
 --grant execute on spIfc_AgregaTII_4001 to rol_InterfazCompras;
+
+--datos impositivos loc Argentina
+grant execute on spIfc_Nfret_gl10030 to rol_interfazCompras;
+
 go
 
 GO

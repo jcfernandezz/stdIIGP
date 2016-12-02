@@ -319,6 +319,18 @@ namespace IntegradorDeGP
                         this.integraTransactionXml();
                 }
 
+                if (_Param.FacturaPmLOCALIZACION.Equals("ARG"))
+                {
+                    //Si es factura agrega datos para el servicio de impuestos
+                    if (this.iError == 0 && factura.facturaPm.DOCTYPE == 1)
+                    {
+                        FacturaDeCompraAdicionales adicionalesFactura = new FacturaDeCompraAdicionales(_DatosConexionDB, factura);
+                        adicionalesFactura.spIfc_Nfret_gl10030();
+                        this.sMensaje = adicionalesFactura.sMensaje;
+                        this.iError++;
+                    }
+                }
+
             }
             catch (eConnectException eConnErr)
             {
