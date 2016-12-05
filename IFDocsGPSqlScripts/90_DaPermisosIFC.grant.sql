@@ -14,7 +14,7 @@ GRANT select ON dbo.vwIfcCompannias TO dyngrp, rol_InterfazCompras;
 go
 
 
-use gspn
+use tpope
 GO
 IF DATABASE_PRINCIPAL_ID('rol_InterfazCompras') IS NULL
 	create role rol_InterfazCompras;

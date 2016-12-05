@@ -128,29 +128,24 @@ namespace gp.InterfacesPersonalizadas
 
         private bool cargaCompannias(bool Filtro, string Unica)
         {
-            vwIfcCompannias Compannias = new vwIfcCompannias(DatosConexionDB.Elemento.ConnStrDyn);
-            //if (Filtro)
+            //vwIfcCompannias Compannias = new vwIfcCompannias(DatosConexionDB.Elemento.ConnStrDyn);
+            //try
             //{
-            //    Compannias.Where.INTERID.Value = Unica;
-            //    Compannias.Where.INTERID.Operator = WhereParameter.Operand.Equal;
+            //    if (Compannias.Query.Load())
+            //    {
+            //        //Ocasiona que se dispare el trigger textChanged del combo box
+            //        cmbBxCompannia.DisplayMember = vwIfcCompannias.ColumnNames.CMPNYNAM;
+            //        cmbBxCompannia.ValueMember = vwIfcCompannias.ColumnNames.INTERID;
+            //        cmbBxCompannia.DataSource = Compannias.DefaultView;
+            //        return true;
+            //    }
+            //    else
+            //        ultimoMensaje = "No tiene acceso a ninguna compañía. Revise los privilegios otorgados a su usuario. [cargaCompannias]";
             //}
-            try
-            {
-                if (Compannias.Query.Load())
-                {
-                    //Ocasiona que se dispare el trigger textChanged del combo box
-                    cmbBxCompannia.DisplayMember = vwIfcCompannias.ColumnNames.CMPNYNAM;
-                    cmbBxCompannia.ValueMember = vwIfcCompannias.ColumnNames.INTERID;
-                    cmbBxCompannia.DataSource = Compannias.DefaultView;
-                    return true;
-                }
-                else
-                    ultimoMensaje = "No tiene acceso a ninguna compañía. Revise los privilegios otorgados a su usuario. [cargaCompannias]";
-            }
-            catch (Exception eCia)
-            {
-                ultimoMensaje = "Contacte al administrador. No se puede acceder a la base de datos. [CargaCompannias] " + DatosConexionDB.ultimoMensaje + " - " + eCia.Message;
-            }
+            //catch (Exception eCia)
+            //{
+            //    ultimoMensaje = "Contacte al administrador. No se puede acceder a la base de datos. [CargaCompannias] " + DatosConexionDB.ultimoMensaje + " - " + eCia.Message;
+            //}
             return false;
         }
 

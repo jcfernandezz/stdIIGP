@@ -16,3 +16,7 @@ C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\obj\Release\Comun.dll
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\obj\Release\Comun.pdb
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Comun\obj\Release\Comun.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\bin\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\bin\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\obj\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\obj\Release\Comun.pdb
