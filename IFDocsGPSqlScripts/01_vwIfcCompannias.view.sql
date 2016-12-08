@@ -10,10 +10,11 @@ create view dbo.vwIfcCompannias as
 --Propósito. Obtiene la lista de compañías que integran facturas de compra
 --Utilizado por. Integración de facturas de compra
 --14/12/10 jcf Creación
+--05/12/16 jcf deprecated. Usa el archivo de configuración.
 --
 select ci.CMPANYID, ci.INTERID, ci.CMPNYNAM, ci.CCode
 from DYNAMICS..SY01500 ci			--sy_company_mstr
-WHERE INTERID in ('GUSA')				
+WHERE INTERID in ('')				
 
 go
 IF (@@Error = 0) PRINT 'Creación exitosa de la vista: vwIfcCompannias'

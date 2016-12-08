@@ -319,6 +319,18 @@ namespace IntegradorDeGP
                         this.integraTransactionXml();
                 }
 
+                if (_Param.FacturaPmLOCALIZACION.Equals("ARG"))
+                {
+                    //Si es factura agrega datos para el servicio de impuestos
+                    FacturaDeCompraAdicionales adicionalesFactura = new FacturaDeCompraAdicionales(_DatosConexionDB, factura);
+                    if (this.iError == 0 && factura.facturaPm.DOCTYPE == 1)
+                    {
+                        adicionalesFactura.spIfc_Nfret_gl10030();
+                        adicionalesFactura.spIfc_awli_pm00400();
+                    }
+
+                }
+
             }
             catch (eConnectException eConnErr)
             {
@@ -332,7 +344,7 @@ namespace IntegradorDeGP
             }
             catch (Exception errorGral)
             {
-                sMensaje = "Excepción desconocida. " + errorGral.Message + " [IntegraComprasGP.integraFacturaPM]";
+                sMensaje = "Excepción. " + errorGral.Message + " [IntegraComprasGP.integraFacturaPM]";
                 iError++;
             }
         }

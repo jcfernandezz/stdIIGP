@@ -82,3 +82,24 @@ C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpInt
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpIntegraciones\obj\Release\gp.InterfacesPersonalizadas.Properties.Resources.resources
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGPapp.csproj.GenerateResource.Cache
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\gpIntegraciones\bin\Release\System.Web.Services.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegraFCGP.exe.config
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.exe
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegraFCGP.exe
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegraFCGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\CLManipulaArchivos.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\EPPlus.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\MyGeneration.dOOdads_2005.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\System.Web.Services.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\EntityFramework.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\CLManipulaArchivos.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\EPPlus.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\EntityFramework.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGPapp.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\gp.InterfacesPersonalizadas.winformGeneraFE.resources
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\gp.InterfacesPersonalizadas.Properties.Resources.resources
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGPapp.csproj.GenerateResource.Cache
