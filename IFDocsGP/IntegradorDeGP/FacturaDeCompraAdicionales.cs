@@ -361,7 +361,7 @@ namespace IntegradorDeGP
             }
         }
         /// <summary>
-        /// Datos adicionales de facturas para localización argentina
+        /// Retenciones de factura para localización argentina
         /// </summary>
         public void spIfc_Nfret_gl10030()
         {
@@ -386,7 +386,7 @@ namespace IntegradorDeGP
                         cmd.Parameters[1].Value = _docPm.facturaPm.DOCTYPE;
                         cmd.Parameters[2].Value = _docPm.facturaPm.DOCNUMBR;
                         cmd.Parameters[3].Value = _docPm.facturaPm.VCHNUMWK;
-                        cmd.Parameters[4].Value = _docPm.facturaPm.USRDEFND2==null?String.Empty : _docPm.facturaPm.USRDEFND2;
+                        cmd.Parameters[4].Value = _docPm.facturaPm.USRDEFND2 == null ? String.Empty : _docPm.facturaPm.USRDEFND2;
                         cmd.Parameters[5].Value = 0;
 
                         conn.Open();
@@ -397,8 +397,48 @@ namespace IntegradorDeGP
             }
             catch (Exception errorGral)
             {
-                sMensaje = "Excepción al ingresar el número de factura en la localización argentina. " + errorGral.Message + " [spIfc_Nfret_gl10030]";
+                sMensaje = "Excepción al ingresar retenciones en la localización argentina. " + errorGral.Message + " [spIfc_Nfret_gl10030]";
                 iError++;
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Datos adicionales de facturas pm para localización argentina
+        /// </summary>
+        public void spIfc_awli_pm00400()
+        {
+            iError = 0;
+            sMensaje = "";
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(_DatosConexionDB.Elemento.ConnStr))
+                {
+                    using (SqlCommand cmd = new SqlCommand("dbo.spIfc_awli_pm00400", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        cmd.Parameters.Add("@VENDORID", SqlDbType.Char, 15);                //0
+                        cmd.Parameters.Add("@DOCTYPE", SqlDbType.SmallInt);                 //1
+                        cmd.Parameters.Add("@DOCNUMBR", SqlDbType.Char, 21);                //2
+                        cmd.Parameters.Add("@VCHRNMBR", SqlDbType.Char, 21);                //3
+
+                        cmd.Parameters[0].Value = _docPm.facturaPm.VENDORID;
+                        cmd.Parameters[1].Value = _docPm.facturaPm.DOCTYPE;
+                        cmd.Parameters[2].Value = _docPm.facturaPm.DOCNUMBR;
+                        cmd.Parameters[3].Value = _docPm.facturaPm.VCHNUMWK;
+
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
+                    }
+                }
+            }
+            catch (Exception errorGral)
+            {
+                sMensaje = "Excepción al ingresar datos adicionales de factura en la localización argentina. " + errorGral.Message + " [spIfc_awli_pm00400]";
+                iError++;
+                throw;
             }
         }
 

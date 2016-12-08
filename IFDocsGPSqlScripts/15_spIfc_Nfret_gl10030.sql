@@ -39,3 +39,24 @@ SELECT @VENDORID,@DOCTYPE,@DOCNUMBR,@VCHRNMBR,@nfRET_plan_de_retencione,@nfRET_A
 END
  
 GO
+-----------------------------------------------
+--SELECT *
+--FROM nfret_gl10030
+
+--SELECT *
+----update a set grossincomeNumber = '0'
+--FROM AWLI_PM00200 a
+----where a.grossincomeNumber = ''
+
+--SELECT *
+----update a set cod_comp = '11'
+--FROM AWLI_PM00400 a
+
+--select *
+--from awli_pm00200
+
+--sp_statistics nfret_gl10030
+--sp_statistics awli_pm00200
+--sp_columns awli_pm00200
+--sp_statistics awli_pm00400
+--sp_columns awli_pm00400

@@ -20,3 +20,4 @@ C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\bin\Relea
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\bin\Release\Comun.pdb
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\obj\Release\Comun.dll
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\obj\Release\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\Comun\obj\Release\Comun.csprojResolveAssemblyReference.cache
