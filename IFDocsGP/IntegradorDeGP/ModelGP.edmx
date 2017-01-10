@@ -4,7 +4,118 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="GPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ModelGP.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PM00200">
+          <Key>
+            <PropertyRef Name="VENDORID" />
+          </Key>
+          <Property Name="VENDORID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="VENDNAME" Type="char" MaxLength="65" Nullable="false" />
+          <Property Name="VNDCHKNM" Type="char" MaxLength="65" Nullable="false" />
+          <Property Name="VENDSHNM" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="VADDCDPR" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="VADCDPAD" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="VADCDSFR" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="VADCDTRO" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="VNDCLSID" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="VNDCNTCT" Type="char" MaxLength="61" Nullable="false" />
+          <Property Name="ADDRESS1" Type="char" MaxLength="61" Nullable="false" />
+          <Property Name="ADDRESS2" Type="char" MaxLength="61" Nullable="false" />
+          <Property Name="ADDRESS3" Type="char" MaxLength="61" Nullable="false" />
+          <Property Name="CITY" Type="char" MaxLength="35" Nullable="false" />
+          <Property Name="STATE" Type="char" MaxLength="29" Nullable="false" />
+          <Property Name="ZIPCODE" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="COUNTRY" Type="char" MaxLength="61" Nullable="false" />
+          <Property Name="PHNUMBR1" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="PHNUMBR2" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="PHONE3" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="FAXNUMBR" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="UPSZONE" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="SHIPMTHD" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="TAXSCHID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="ACNMVNDR" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="TXIDNMBR" Type="char" MaxLength="11" Nullable="false" />
+          <Property Name="VENDSTTS" Type="smallint" Nullable="false" />
+          <Property Name="CURNCYID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="TXRGNNUM" Type="char" MaxLength="25" Nullable="false" />
+          <Property Name="PARVENID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="TRDDISCT" Type="smallint" Nullable="false" />
+          <Property Name="TEN99TYPE" Type="smallint" Nullable="false" />
+          <Property Name="TEN99BOXNUMBER" Type="smallint" Nullable="false" />
+          <Property Name="MINORDER" Type="numeric" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="PYMTRMID" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="MINPYTYP" Type="smallint" Nullable="false" />
+          <Property Name="MINPYPCT" Type="smallint" Nullable="false" />
+          <Property Name="MINPYDLR" Type="numeric" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="MXIAFVND" Type="smallint" Nullable="false" />
+          <Property Name="MAXINDLR" Type="numeric" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="COMMENT1" Type="char" MaxLength="31" Nullable="false" />
+          <Property Name="COMMENT2" Type="char" MaxLength="31" Nullable="false" />
+          <Property Name="USERDEF1" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="USERDEF2" Type="char" MaxLength="21" Nullable="false" />
+          <Property Name="CRLMTDLR" Type="numeric" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="PYMNTPRI" Type="char" MaxLength="3" Nullable="false" />
+          <Property Name="KPCALHST" Type="tinyint" Nullable="false" />
+          <Property Name="KGLDSTHS" Type="tinyint" Nullable="false" />
+          <Property Name="KPERHIST" Type="tinyint" Nullable="false" />
+          <Property Name="KPTRXHST" Type="tinyint" Nullable="false" />
+          <Property Name="HOLD" Type="tinyint" Nullable="false" />
+          <Property Name="PTCSHACF" Type="smallint" Nullable="false" />
+          <Property Name="CREDTLMT" Type="smallint" Nullable="false" />
+          <Property Name="WRITEOFF" Type="smallint" Nullable="false" />
+          <Property Name="MXWOFAMT" Type="numeric" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="SBPPSDED" Type="tinyint" Nullable="false" />
+          <Property Name="PPSTAXRT" Type="smallint" Nullable="false" />
+          <Property Name="DXVARNUM" Type="char" MaxLength="25" Nullable="false" />
+          <Property Name="CRTCOMDT" Type="datetime" Nullable="false" />
+          <Property Name="CRTEXPDT" Type="datetime" Nullable="false" />
+          <Property Name="RTOBUTKN" Type="tinyint" Nullable="false" />
+          <Property Name="XPDTOBLG" Type="tinyint" Nullable="false" />
+          <Property Name="PRSPAYEE" Type="tinyint" Nullable="false" />
+          <Property Name="PMAPINDX" Type="int" Nullable="false" />
+          <Property Name="PMCSHIDX" Type="int" Nullable="false" />
+          <Property Name="PMDAVIDX" Type="int" Nullable="false" />
+          <Property Name="PMDTKIDX" Type="int" Nullable="false" />
+          <Property Name="PMFINIDX" Type="int" Nullable="false" />
+          <Property Name="PMMSCHIX" Type="int" Nullable="false" />
+          <Property Name="PMFRTIDX" Type="int" Nullable="false" />
+          <Property Name="PMTAXIDX" Type="int" Nullable="false" />
+          <Property Name="PMWRTIDX" Type="int" Nullable="false" />
+          <Property Name="PMPRCHIX" Type="int" Nullable="false" />
+          <Property Name="PMRTNGIX" Type="int" Nullable="false" />
+          <Property Name="PMTDSCIX" Type="int" Nullable="false" />
+          <Property Name="ACPURIDX" Type="int" Nullable="false" />
+          <Property Name="PURPVIDX" Type="int" Nullable="false" />
+          <Property Name="NOTEINDX" Type="numeric" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="CHEKBKID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="MODIFDT" Type="datetime" Nullable="false" />
+          <Property Name="CREATDDT" Type="datetime" Nullable="false" />
+          <Property Name="RATETPID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="Revalue_Vendor" Type="tinyint" Nullable="false" />
+          <Property Name="Post_Results_To" Type="smallint" Nullable="false" />
+          <Property Name="FREEONBOARD" Type="smallint" Nullable="false" />
+          <Property Name="GOVCRPID" Type="char" MaxLength="31" Nullable="false" />
+          <Property Name="GOVINDID" Type="char" MaxLength="31" Nullable="false" />
+          <Property Name="DISGRPER" Type="smallint" Nullable="false" />
+          <Property Name="DUEGRPER" Type="smallint" Nullable="false" />
+          <Property Name="DOCFMTID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="TaxInvRecvd" Type="tinyint" Nullable="false" />
+          <Property Name="USERLANG" Type="smallint" Nullable="false" />
+          <Property Name="WithholdingType" Type="smallint" Nullable="false" />
+          <Property Name="WithholdingFormType" Type="smallint" Nullable="false" />
+          <Property Name="WithholdingEntityType" Type="smallint" Nullable="false" />
+          <Property Name="TaxFileNumMode" Type="smallint" Nullable="false" />
+          <Property Name="BRTHDATE" Type="datetime" Nullable="false" />
+          <Property Name="LaborPmtType" Type="smallint" Nullable="false" />
+          <Property Name="CCode" Type="char" MaxLength="7" Nullable="false" />
+          <Property Name="DECLID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="CBVAT" Type="tinyint" Nullable="false" />
+          <Property Name="Workflow_Approval_Status" Type="smallint" Nullable="false" />
+          <Property Name="Workflow_Priority" Type="smallint" Nullable="false" />
+          <Property Name="VADCD1099" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="DEX_ROW_TS" Type="datetime" Nullable="false" />
+          <Property Name="DEX_ROW_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
         <EntityType Name="RM00101">
           <Key>
             <PropertyRef Name="CUSTNMBR" />
@@ -113,14 +224,154 @@
           <Property Name="DEX_ROW_TS" Type="datetime" Nullable="false" />
           <Property Name="DEX_ROW_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="GPModelStoreContainer">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GCHI.dbo.vwImpuestosPlanYDetalle' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vwImpuestosPlanYDetalle">
+          <Key>
+            <PropertyRef Name="taxschid" />
+            <PropertyRef Name="TAXDTLID" />
+            <PropertyRef Name="TXDTLDSC" />
+            <PropertyRef Name="TXDTLTYP" />
+            <PropertyRef Name="ACTINDX" />
+            <PropertyRef Name="TXDTLPCT" />
+          </Key>
+          <Property Name="taxschid" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="TAXDTLID" Type="char" MaxLength="15" Nullable="false" />
+          <Property Name="TXDTLDSC" Type="char" MaxLength="31" Nullable="false" />
+          <Property Name="TXDTLTYP" Type="smallint" Nullable="false" />
+          <Property Name="ACTINDX" Type="int" Nullable="false" />
+          <Property Name="TXDTLPCT" Type="numeric" Precision="19" Scale="5" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ModelGPStoreContainer">
+          <EntitySet Name="PM00200" EntityType="Self.PM00200" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="RM00101" EntityType="Self.RM00101" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="vwImpuestosPlanYDetalle" EntityType="Self.vwImpuestosPlanYDetalle" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vwImpuestosPlanYDetalle].[taxschid] AS [taxschid], 
+    [vwImpuestosPlanYDetalle].[TAXDTLID] AS [TAXDTLID], 
+    [vwImpuestosPlanYDetalle].[TXDTLDSC] AS [TXDTLDSC], 
+    [vwImpuestosPlanYDetalle].[TXDTLTYP] AS [TXDTLTYP], 
+    [vwImpuestosPlanYDetalle].[ACTINDX] AS [ACTINDX], 
+    [vwImpuestosPlanYDetalle].[TXDTLPCT] AS [TXDTLPCT]
+    FROM [dbo].[vwImpuestosPlanYDetalle] AS [vwImpuestosPlanYDetalle]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="GPModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="ModelGP" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PM00200">
+          <Key>
+            <PropertyRef Name="VENDORID" />
+          </Key>
+          <Property Name="VENDORID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VENDNAME" Type="String" MaxLength="65" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VNDCHKNM" Type="String" MaxLength="65" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VENDSHNM" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VADDCDPR" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VADCDPAD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VADCDSFR" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VADCDTRO" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VNDCLSID" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VNDCNTCT" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ADDRESS1" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ADDRESS2" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ADDRESS3" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CITY" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="STATE" Type="String" MaxLength="29" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ZIPCODE" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="COUNTRY" Type="String" MaxLength="61" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PHNUMBR1" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PHNUMBR2" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PHONE3" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="FAXNUMBR" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="UPSZONE" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="SHIPMTHD" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TAXSCHID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="ACNMVNDR" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TXIDNMBR" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="VENDSTTS" Type="Int16" Nullable="false" />
+          <Property Name="CURNCYID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TXRGNNUM" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="PARVENID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TRDDISCT" Type="Int16" Nullable="false" />
+          <Property Name="TEN99TYPE" Type="Int16" Nullable="false" />
+          <Property Name="TEN99BOXNUMBER" Type="Int16" Nullable="false" />
+          <Property Name="MINORDER" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="PYMTRMID" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MINPYTYP" Type="Int16" Nullable="false" />
+          <Property Name="MINPYPCT" Type="Int16" Nullable="false" />
+          <Property Name="MINPYDLR" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="MXIAFVND" Type="Int16" Nullable="false" />
+          <Property Name="MAXINDLR" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="COMMENT1" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="COMMENT2" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="USERDEF1" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="USERDEF2" Type="String" MaxLength="21" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CRLMTDLR" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="PYMNTPRI" Type="String" MaxLength="3" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="KPCALHST" Type="Byte" Nullable="false" />
+          <Property Name="KGLDSTHS" Type="Byte" Nullable="false" />
+          <Property Name="KPERHIST" Type="Byte" Nullable="false" />
+          <Property Name="KPTRXHST" Type="Byte" Nullable="false" />
+          <Property Name="HOLD" Type="Byte" Nullable="false" />
+          <Property Name="PTCSHACF" Type="Int16" Nullable="false" />
+          <Property Name="CREDTLMT" Type="Int16" Nullable="false" />
+          <Property Name="WRITEOFF" Type="Int16" Nullable="false" />
+          <Property Name="MXWOFAMT" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="SBPPSDED" Type="Byte" Nullable="false" />
+          <Property Name="PPSTAXRT" Type="Int16" Nullable="false" />
+          <Property Name="DXVARNUM" Type="String" MaxLength="25" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CRTCOMDT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CRTEXPDT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RTOBUTKN" Type="Byte" Nullable="false" />
+          <Property Name="XPDTOBLG" Type="Byte" Nullable="false" />
+          <Property Name="PRSPAYEE" Type="Byte" Nullable="false" />
+          <Property Name="PMAPINDX" Type="Int32" Nullable="false" />
+          <Property Name="PMCSHIDX" Type="Int32" Nullable="false" />
+          <Property Name="PMDAVIDX" Type="Int32" Nullable="false" />
+          <Property Name="PMDTKIDX" Type="Int32" Nullable="false" />
+          <Property Name="PMFINIDX" Type="Int32" Nullable="false" />
+          <Property Name="PMMSCHIX" Type="Int32" Nullable="false" />
+          <Property Name="PMFRTIDX" Type="Int32" Nullable="false" />
+          <Property Name="PMTAXIDX" Type="Int32" Nullable="false" />
+          <Property Name="PMWRTIDX" Type="Int32" Nullable="false" />
+          <Property Name="PMPRCHIX" Type="Int32" Nullable="false" />
+          <Property Name="PMRTNGIX" Type="Int32" Nullable="false" />
+          <Property Name="PMTDSCIX" Type="Int32" Nullable="false" />
+          <Property Name="ACPURIDX" Type="Int32" Nullable="false" />
+          <Property Name="PURPVIDX" Type="Int32" Nullable="false" />
+          <Property Name="NOTEINDX" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+          <Property Name="CHEKBKID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="MODIFDT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CREATDDT" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="RATETPID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Revalue_Vendor" Type="Byte" Nullable="false" />
+          <Property Name="Post_Results_To" Type="Int16" Nullable="false" />
+          <Property Name="FREEONBOARD" Type="Int16" Nullable="false" />
+          <Property Name="GOVCRPID" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="GOVINDID" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DISGRPER" Type="Int16" Nullable="false" />
+          <Property Name="DUEGRPER" Type="Int16" Nullable="false" />
+          <Property Name="DOCFMTID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TaxInvRecvd" Type="Byte" Nullable="false" />
+          <Property Name="USERLANG" Type="Int16" Nullable="false" />
+          <Property Name="WithholdingType" Type="Int16" Nullable="false" />
+          <Property Name="WithholdingFormType" Type="Int16" Nullable="false" />
+          <Property Name="WithholdingEntityType" Type="Int16" Nullable="false" />
+          <Property Name="TaxFileNumMode" Type="Int16" Nullable="false" />
+          <Property Name="BRTHDATE" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LaborPmtType" Type="Int16" Nullable="false" />
+          <Property Name="CCode" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DECLID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="CBVAT" Type="Byte" Nullable="false" />
+          <Property Name="Workflow_Approval_Status" Type="Int16" Nullable="false" />
+          <Property Name="Workflow_Priority" Type="Int16" Nullable="false" />
+          <Property Name="VADCD1099" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="DEX_ROW_TS" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DEX_ROW_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
         <EntityType Name="RM00101">
           <Key>
             <PropertyRef Name="CUSTNMBR" />
@@ -229,17 +480,147 @@
           <Property Name="DEX_ROW_TS" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="DEX_ROW_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
-        <EntityContainer Name="GPEntities" annotation:LazyLoadingEnabled="true">
+        <EntityType Name="vwImpuestosPlanYDetalle">
+          <Key>
+            <PropertyRef Name="taxschid" />
+            <PropertyRef Name="TAXDTLID" />
+            <PropertyRef Name="TXDTLDSC" />
+            <PropertyRef Name="TXDTLTYP" />
+            <PropertyRef Name="ACTINDX" />
+            <PropertyRef Name="TXDTLPCT" />
+          </Key>
+          <Property Name="taxschid" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TAXDTLID" Type="String" MaxLength="15" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TXDTLDSC" Type="String" MaxLength="31" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="TXDTLTYP" Type="Int16" Nullable="false" />
+          <Property Name="ACTINDX" Type="Int32" Nullable="false" />
+          <Property Name="TXDTLPCT" Type="Decimal" Precision="19" Scale="5" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="EntitiesGP" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PM00200" EntityType="Self.PM00200" />
           <EntitySet Name="RM00101" EntityType="Self.RM00101" />
+          <EntitySet Name="vwImpuestosPlanYDetalle" EntityType="Self.vwImpuestosPlanYDetalle" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="GPModelStoreContainer" CdmEntityContainer="GPEntities">
+        <EntityContainerMapping StorageEntityContainer="ModelGPStoreContainer" CdmEntityContainer="EntitiesGP">
+          <EntitySetMapping Name="PM00200">
+            <EntityTypeMapping TypeName="ModelGP.PM00200">
+              <MappingFragment StoreEntitySet="PM00200">
+                <ScalarProperty Name="VENDORID" ColumnName="VENDORID" />
+                <ScalarProperty Name="VENDNAME" ColumnName="VENDNAME" />
+                <ScalarProperty Name="VNDCHKNM" ColumnName="VNDCHKNM" />
+                <ScalarProperty Name="VENDSHNM" ColumnName="VENDSHNM" />
+                <ScalarProperty Name="VADDCDPR" ColumnName="VADDCDPR" />
+                <ScalarProperty Name="VADCDPAD" ColumnName="VADCDPAD" />
+                <ScalarProperty Name="VADCDSFR" ColumnName="VADCDSFR" />
+                <ScalarProperty Name="VADCDTRO" ColumnName="VADCDTRO" />
+                <ScalarProperty Name="VNDCLSID" ColumnName="VNDCLSID" />
+                <ScalarProperty Name="VNDCNTCT" ColumnName="VNDCNTCT" />
+                <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+                <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+                <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="STATE" ColumnName="STATE" />
+                <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="PHNUMBR1" ColumnName="PHNUMBR1" />
+                <ScalarProperty Name="PHNUMBR2" ColumnName="PHNUMBR2" />
+                <ScalarProperty Name="PHONE3" ColumnName="PHONE3" />
+                <ScalarProperty Name="FAXNUMBR" ColumnName="FAXNUMBR" />
+                <ScalarProperty Name="UPSZONE" ColumnName="UPSZONE" />
+                <ScalarProperty Name="SHIPMTHD" ColumnName="SHIPMTHD" />
+                <ScalarProperty Name="TAXSCHID" ColumnName="TAXSCHID" />
+                <ScalarProperty Name="ACNMVNDR" ColumnName="ACNMVNDR" />
+                <ScalarProperty Name="TXIDNMBR" ColumnName="TXIDNMBR" />
+                <ScalarProperty Name="VENDSTTS" ColumnName="VENDSTTS" />
+                <ScalarProperty Name="CURNCYID" ColumnName="CURNCYID" />
+                <ScalarProperty Name="TXRGNNUM" ColumnName="TXRGNNUM" />
+                <ScalarProperty Name="PARVENID" ColumnName="PARVENID" />
+                <ScalarProperty Name="TRDDISCT" ColumnName="TRDDISCT" />
+                <ScalarProperty Name="TEN99TYPE" ColumnName="TEN99TYPE" />
+                <ScalarProperty Name="TEN99BOXNUMBER" ColumnName="TEN99BOXNUMBER" />
+                <ScalarProperty Name="MINORDER" ColumnName="MINORDER" />
+                <ScalarProperty Name="PYMTRMID" ColumnName="PYMTRMID" />
+                <ScalarProperty Name="MINPYTYP" ColumnName="MINPYTYP" />
+                <ScalarProperty Name="MINPYPCT" ColumnName="MINPYPCT" />
+                <ScalarProperty Name="MINPYDLR" ColumnName="MINPYDLR" />
+                <ScalarProperty Name="MXIAFVND" ColumnName="MXIAFVND" />
+                <ScalarProperty Name="MAXINDLR" ColumnName="MAXINDLR" />
+                <ScalarProperty Name="COMMENT1" ColumnName="COMMENT1" />
+                <ScalarProperty Name="COMMENT2" ColumnName="COMMENT2" />
+                <ScalarProperty Name="USERDEF1" ColumnName="USERDEF1" />
+                <ScalarProperty Name="USERDEF2" ColumnName="USERDEF2" />
+                <ScalarProperty Name="CRLMTDLR" ColumnName="CRLMTDLR" />
+                <ScalarProperty Name="PYMNTPRI" ColumnName="PYMNTPRI" />
+                <ScalarProperty Name="KPCALHST" ColumnName="KPCALHST" />
+                <ScalarProperty Name="KGLDSTHS" ColumnName="KGLDSTHS" />
+                <ScalarProperty Name="KPERHIST" ColumnName="KPERHIST" />
+                <ScalarProperty Name="KPTRXHST" ColumnName="KPTRXHST" />
+                <ScalarProperty Name="HOLD" ColumnName="HOLD" />
+                <ScalarProperty Name="PTCSHACF" ColumnName="PTCSHACF" />
+                <ScalarProperty Name="CREDTLMT" ColumnName="CREDTLMT" />
+                <ScalarProperty Name="WRITEOFF" ColumnName="WRITEOFF" />
+                <ScalarProperty Name="MXWOFAMT" ColumnName="MXWOFAMT" />
+                <ScalarProperty Name="SBPPSDED" ColumnName="SBPPSDED" />
+                <ScalarProperty Name="PPSTAXRT" ColumnName="PPSTAXRT" />
+                <ScalarProperty Name="DXVARNUM" ColumnName="DXVARNUM" />
+                <ScalarProperty Name="CRTCOMDT" ColumnName="CRTCOMDT" />
+                <ScalarProperty Name="CRTEXPDT" ColumnName="CRTEXPDT" />
+                <ScalarProperty Name="RTOBUTKN" ColumnName="RTOBUTKN" />
+                <ScalarProperty Name="XPDTOBLG" ColumnName="XPDTOBLG" />
+                <ScalarProperty Name="PRSPAYEE" ColumnName="PRSPAYEE" />
+                <ScalarProperty Name="PMAPINDX" ColumnName="PMAPINDX" />
+                <ScalarProperty Name="PMCSHIDX" ColumnName="PMCSHIDX" />
+                <ScalarProperty Name="PMDAVIDX" ColumnName="PMDAVIDX" />
+                <ScalarProperty Name="PMDTKIDX" ColumnName="PMDTKIDX" />
+                <ScalarProperty Name="PMFINIDX" ColumnName="PMFINIDX" />
+                <ScalarProperty Name="PMMSCHIX" ColumnName="PMMSCHIX" />
+                <ScalarProperty Name="PMFRTIDX" ColumnName="PMFRTIDX" />
+                <ScalarProperty Name="PMTAXIDX" ColumnName="PMTAXIDX" />
+                <ScalarProperty Name="PMWRTIDX" ColumnName="PMWRTIDX" />
+                <ScalarProperty Name="PMPRCHIX" ColumnName="PMPRCHIX" />
+                <ScalarProperty Name="PMRTNGIX" ColumnName="PMRTNGIX" />
+                <ScalarProperty Name="PMTDSCIX" ColumnName="PMTDSCIX" />
+                <ScalarProperty Name="ACPURIDX" ColumnName="ACPURIDX" />
+                <ScalarProperty Name="PURPVIDX" ColumnName="PURPVIDX" />
+                <ScalarProperty Name="NOTEINDX" ColumnName="NOTEINDX" />
+                <ScalarProperty Name="CHEKBKID" ColumnName="CHEKBKID" />
+                <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+                <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+                <ScalarProperty Name="RATETPID" ColumnName="RATETPID" />
+                <ScalarProperty Name="Revalue_Vendor" ColumnName="Revalue_Vendor" />
+                <ScalarProperty Name="Post_Results_To" ColumnName="Post_Results_To" />
+                <ScalarProperty Name="FREEONBOARD" ColumnName="FREEONBOARD" />
+                <ScalarProperty Name="GOVCRPID" ColumnName="GOVCRPID" />
+                <ScalarProperty Name="GOVINDID" ColumnName="GOVINDID" />
+                <ScalarProperty Name="DISGRPER" ColumnName="DISGRPER" />
+                <ScalarProperty Name="DUEGRPER" ColumnName="DUEGRPER" />
+                <ScalarProperty Name="DOCFMTID" ColumnName="DOCFMTID" />
+                <ScalarProperty Name="TaxInvRecvd" ColumnName="TaxInvRecvd" />
+                <ScalarProperty Name="USERLANG" ColumnName="USERLANG" />
+                <ScalarProperty Name="WithholdingType" ColumnName="WithholdingType" />
+                <ScalarProperty Name="WithholdingFormType" ColumnName="WithholdingFormType" />
+                <ScalarProperty Name="WithholdingEntityType" ColumnName="WithholdingEntityType" />
+                <ScalarProperty Name="TaxFileNumMode" ColumnName="TaxFileNumMode" />
+                <ScalarProperty Name="BRTHDATE" ColumnName="BRTHDATE" />
+                <ScalarProperty Name="LaborPmtType" ColumnName="LaborPmtType" />
+                <ScalarProperty Name="CCode" ColumnName="CCode" />
+                <ScalarProperty Name="DECLID" ColumnName="DECLID" />
+                <ScalarProperty Name="CBVAT" ColumnName="CBVAT" />
+                <ScalarProperty Name="Workflow_Approval_Status" ColumnName="Workflow_Approval_Status" />
+                <ScalarProperty Name="Workflow_Priority" ColumnName="Workflow_Priority" />
+                <ScalarProperty Name="VADCD1099" ColumnName="VADCD1099" />
+                <ScalarProperty Name="DEX_ROW_TS" ColumnName="DEX_ROW_TS" />
+                <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="RM00101">
-            <EntityTypeMapping TypeName="GPModel.RM00101">
+            <EntityTypeMapping TypeName="ModelGP.RM00101">
               <MappingFragment StoreEntitySet="RM00101">
                 <ScalarProperty Name="CUSTNMBR" ColumnName="CUSTNMBR" />
                 <ScalarProperty Name="CUSTNAME" ColumnName="CUSTNAME" />
@@ -344,6 +725,18 @@
                 <ScalarProperty Name="INCLUDEINDP" ColumnName="INCLUDEINDP" />
                 <ScalarProperty Name="DEX_ROW_TS" ColumnName="DEX_ROW_TS" />
                 <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vwImpuestosPlanYDetalle">
+            <EntityTypeMapping TypeName="ModelGP.vwImpuestosPlanYDetalle">
+              <MappingFragment StoreEntitySet="vwImpuestosPlanYDetalle">
+                <ScalarProperty Name="taxschid" ColumnName="taxschid" />
+                <ScalarProperty Name="TAXDTLID" ColumnName="TAXDTLID" />
+                <ScalarProperty Name="TXDTLDSC" ColumnName="TXDTLDSC" />
+                <ScalarProperty Name="TXDTLTYP" ColumnName="TXDTLTYP" />
+                <ScalarProperty Name="ACTINDX" ColumnName="ACTINDX" />
+                <ScalarProperty Name="TXDTLPCT" ColumnName="TXDTLPCT" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

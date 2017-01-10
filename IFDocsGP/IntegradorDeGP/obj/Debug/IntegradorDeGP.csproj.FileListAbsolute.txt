@@ -72,3 +72,22 @@ C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\Integ
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.xml
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.SqlServer.xml
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\E. Implementation\IFDocsGP\IntegradorDeGP\bin\Debug\EPPlus.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll.config
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\IntegradorDeGP.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\Comun.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.SqlServer.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\EPPlus.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\Microsoft.Dynamics.GP.eConnect.Serialization.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\MyGeneration.dOOdads_2005.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\CLManipulaArchivos.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\Comun.pdb
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\EntityFramework.SqlServer.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\bin\Debug\EPPlus.xml
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.csprojResolveAssemblyReference.cache
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.dll
+C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\IntegradorDeGP\obj\Debug\IntegradorDeGP.pdb

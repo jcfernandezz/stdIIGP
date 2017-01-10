@@ -131,7 +131,7 @@ namespace IntegradorDeGP
         {
             int n = 0;
             string cliente = string.Empty;
-            using (GPEntities gp = new GPEntities())
+            using (EntitiesGP gp = new EntitiesGP())
                 {
                     var c = gp.RM00101.Where(w => w.TXRGNNUM.Equals(txrgnnum.Trim()) && w.INACTIVE == 0)
                                     .Select(s => new { custnmbr = s.CUSTNMBR.Trim() });
