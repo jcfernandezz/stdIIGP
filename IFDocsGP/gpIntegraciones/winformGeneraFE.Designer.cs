@@ -150,7 +150,7 @@
             // 
             this.genFacturaElectrónicaV10ToolStripMenuItem.Name = "genFacturaElectrónicaV10ToolStripMenuItem";
             this.genFacturaElectrónicaV10ToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.genFacturaElectrónicaV10ToolStripMenuItem.Text = "Integraciones a GP v. 2.5.0";
+            this.genFacturaElectrónicaV10ToolStripMenuItem.Text = "Integraciones a GP v. 2.6.0";
             // 
             // toolStripMenuItem2
             // 

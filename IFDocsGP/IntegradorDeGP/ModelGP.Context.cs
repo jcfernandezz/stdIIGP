@@ -13,10 +13,10 @@ namespace IntegradorDeGP
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class GPEntities : DbContext
+    public partial class EntitiesGP : DbContext
     {
-        public GPEntities()
-            : base("name=GPEntities")
+        public EntitiesGP()
+            : base("name=EntitiesGP")
         {
         }
     
@@ -25,6 +25,8 @@ namespace IntegradorDeGP
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<PM00200> PM00200 { get; set; }
         public virtual DbSet<RM00101> RM00101 { get; set; }
+        public virtual DbSet<vwImpuestosPlanYDetalle> vwImpuestosPlanYDetalle { get; set; }
     }
 }

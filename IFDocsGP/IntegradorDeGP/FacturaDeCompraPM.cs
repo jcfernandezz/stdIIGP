@@ -28,6 +28,7 @@ namespace IntegradorDeGP
         private taPMDistribution_ItemsTaPMDistribution[] _distribucionPm;
         public PMTransactionType facturaPmType;
         public PMTransactionType[] arrFacturaPmType;
+        List<taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert> taxDetails = new List<taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert>();
 
         public FacturaDeCompraPM(ConexionDB DatosConexionDB)
         {
@@ -38,7 +39,58 @@ namespace IntegradorDeGP
         }
 
         /// <summary>
-        /// Arma factura PM en objeto econnect.
+        /// Obtiene plan de impuestos del proveedor
+        /// </summary>
+        /// <param name="vendorid"></param>
+        /// <returns></returns>
+        private string getDatosProveedor(string vendorid)
+        {
+            int n = 0;
+            string taxschid = string.Empty;
+            using (EntitiesGP gp = new EntitiesGP())
+            {
+                var c = gp.PM00200.Where(w => w.VENDORID.Equals(vendorid.Trim()))
+                    .Select(s => new { taxschid = s.TAXSCHID });
+
+                n = c.Count();
+                foreach (var r in c)
+                    taxschid = r.taxschid;
+            }
+            if (n == 0)
+                throw new NullReferenceException("Proveedor inexistente " + vendorid);
+
+            return taxschid;
+
+        }
+
+        private void armaDetalleImpuestos(String taxschid)
+        {
+            using (EntitiesGP gp = new EntitiesGP())
+            {
+                var detalleImpuestosCompras = gp.vwImpuestosPlanYDetalle.Where(w => w.TXDTLTYP.Equals(2) && w.taxschid.Equals(taxschid))
+                    .Select(s => new { s.TAXDTLID, s.TXDTLPCT});
+
+                foreach (var impuesto in detalleImpuestosCompras)
+                {
+                    taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert item = new taPMTransactionTaxInsert_ItemsTaPMTransactionTaxInsert();
+
+                    item.VENDORID = facturaPm.VENDORID;
+                    item.VCHRNMBR = facturaPm.VCHNUMWK;
+                    item.DOCTYPE = facturaPm.DOCTYPE;
+                    item.BACHNUMB = facturaPm.BACHNUMB;
+                    item.TAXDTLID = impuesto.TAXDTLID;
+
+                    item.TAXAMNT = Decimal.Round((facturaPm.PRCHAMNT - facturaPm.TRDISAMT) * impuesto.TXDTLPCT/100, 2);
+                    item.TDTTXPUR = facturaPm.PRCHAMNT - facturaPm.TRDISAMT;
+                    item.TXDTTPUR = facturaPm.PRCHAMNT - facturaPm.TRDISAMT;
+
+                    taxDetails.Add(item);
+                }
+            }
+
+        }
+        /// <summary>
+        /// Arma factura PM en objeto econnect facturaPm.
         /// </summary>
         /// <param name="hojaXl"></param>
         /// <param name="fila"></param>
@@ -70,17 +122,17 @@ namespace IntegradorDeGP
                 }
                 else
                     if (esf.Equals("SI"))
-                    {
-                        facturaPm.DOCTYPE = 1;  //invoice
-                        facturaPm.VENDORID = hojaXl.Cells[fila, param.facturaPmVENDORID].Value.ToString().Trim();
-                        facturaPm.DOCNUMBR = hojaXl.Cells[fila, param.facturaPmDOCNUMBR].Value.ToString().Trim();
-                    }
-                    else
-                    {
-                        facturaPm.DOCTYPE = 3;  //misc charge
-                        facturaPm.VENDORID = param.facturaPmGenericVENDORID;
-                        facturaPm.DOCNUMBR = param.facturaPmGenericVENDORID + "-" + hojaXl.Cells[fila, param.facturaPmDOCNUMBR].Value.ToString().Trim();
-                    }
+                {
+                    facturaPm.DOCTYPE = 1;  //invoice
+                    facturaPm.VENDORID = hojaXl.Cells[fila, param.facturaPmVENDORID].Value.ToString().Trim();
+                    facturaPm.DOCNUMBR = hojaXl.Cells[fila, param.facturaPmDOCNUMBR].Value.ToString().Trim();
+                }
+                else
+                {
+                    facturaPm.DOCTYPE = 3;  //misc charge
+                    facturaPm.VENDORID = param.facturaPmGenericVENDORID;
+                    facturaPm.DOCNUMBR = param.facturaPmGenericVENDORID + "-" + hojaXl.Cells[fila, param.facturaPmDOCNUMBR].Value.ToString().Trim();
+                }
 
                 facturaPm.BACHNUMB = sTimeStamp;
                 facturaPm.BatchCHEKBKID = param.facturaPmBatchCHEKBKID;
@@ -107,16 +159,23 @@ namespace IntegradorDeGP
                 if (hojaXl.Cells[fila, param.facturaPmDUEDATE].Value != null)
                     facturaPm.DUEDATE = DateTime.Parse(hojaXl.Cells[fila, param.facturaPmDUEDATE].Value.ToString().Trim()).ToString(param.FormatoFecha);
 
-                //Utiles.ConvierteAFechaFmt(hojaXl.Cells[fila, param.facturaPmDOCDATE].Value.ToString().Trim(), out fechaFactura);
-                //facturaPm.DOCDATE = String.Format("{0:"+ param.FormatoFecha +"}", fechaFactura); 
                 facturaPm.CURNCYID = hojaXl.Cells[fila, param.facturaPmCURNCYID].Value.ToString();
 
-                //CultureInfo culture = CultureInfo.CreateSpecificCulture("en-US");
-                //facturaPm.PRCHAMNT = Decimal.Round(Convert.ToDecimal(hojaXl.Cells[fila, param.facturaPmPRCHAMNT].Value.ToString()), 2);
                 facturaPm.PRCHAMNT = Decimal.Round(Convert.ToDecimal(hojaXl.Cells[fila, param.facturaPmPRCHAMNT].Value.ToString(), CultureInfo.InvariantCulture), 2);
 
-                facturaPm.DOCAMNT = facturaPm.PRCHAMNT;
-                facturaPm.CHRGAMNT = facturaPm.PRCHAMNT;
+
+                if (param.DistribucionPmAplica.Equals("SI"))
+                    facturaPm.CREATEDIST = 0;               //no crea el asiento contable automáticamente
+                else
+                {   //armado manual del detalle de los impuestos. El asiento contable se calcula automáticamente
+                    facturaPm.TAXSCHID = getDatosProveedor(facturaPm.VENDORID);
+                    armaDetalleImpuestos(facturaPm.TAXSCHID);
+                    facturaPm.TAXAMNT = taxDetails.Sum(t => t.TAXAMNT);
+                }
+
+                facturaPm.DOCAMNT = facturaPm.MSCCHAMT + facturaPm.PRCHAMNT + facturaPm.TAXAMNT + facturaPm.FRTAMNT - facturaPm.TRDISAMT;
+                //facturaPm.DOCAMNT = facturaPm.PRCHAMNT;
+                facturaPm.CHRGAMNT = facturaPm.DOCAMNT;
 
                 if (hojaXl.Cells[fila, param.facturaPmPAGADO].Value != null && hojaXl.Cells[fila, param.facturaPmPAGADO].Value.ToString() == "SI")
                 {
@@ -127,8 +186,12 @@ namespace IntegradorDeGP
                     facturaPm.CAMTDATE = facturaPm.DOCDATE;
                 }
 
-                if (param.DistribucionPmAplica.Equals("SI"))
-                    facturaPm.CREATEDIST = 0;
+            }
+
+            catch (NullReferenceException nr)
+            {
+                sMensaje = nr.Message + " " + nr.TargetSite.ToString();
+                iError++;
             }
             catch (FormatException fmt)
             {
@@ -250,7 +313,6 @@ namespace IntegradorDeGP
                     {
                         throw new ArgumentException("La tasa de retención no es un número. Ingrese un número válido. [Excepción en FacturaDeCompraPM.validaDatosDeIngreso]", "Columna: " + param.facturaPmRETENCION.ToString());
                     }
-
                 }
 
                 if (hojaXl.Cells[iDetalleFactura, param.facturaPmPAGADO].Value != null && hojaXl.Cells[iDetalleFactura, param.facturaPmPAGADO].Value.ToString() == "SI")
@@ -373,7 +435,10 @@ namespace IntegradorDeGP
                     armaDistribucionPmEconn(param);
                     this.facturaPmType.taPMDistribution_Items = _distribucionPm;
                 }
-
+                else
+                {   //armado manual del detalle de los impuestos. El asiento contable se calcula automáticamente
+                    this.facturaPmType.taPMTransactionTaxInsert_Items = taxDetails.ToArray();
+                }
                 arrFacturaPmType = new PMTransactionType[] { this.facturaPmType };
 
             }

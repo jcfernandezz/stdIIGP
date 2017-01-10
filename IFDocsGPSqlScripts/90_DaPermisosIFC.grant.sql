@@ -26,6 +26,7 @@ grant select, update, insert on dbo.pm10500 to rol_InterfazCompras;
 grant select, update, insert on dbo.pm10100 to rol_InterfazCompras;
 grant select on dbo.pm20000 to rol_InterfazCompras;
 grant select on dbo.pm30200 to rol_InterfazCompras;
+grant select on dbo.vwImpuestosPlanYDetalle to rol_InterfazCompras;
 
 --retenciones loc Argentina
 grant select, insert, update on nfRET_GL10030 to rol_InterfazCompras;
