@@ -1,8 +1,120 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="GPModelStoreContainer" CdmEntityContainer="GPEntities">
+  <EntityContainerMapping StorageEntityContainer="ModelGPStoreContainer" CdmEntityContainer="EntitiesGP">
+    <EntitySetMapping Name="PM00200">
+      <EntityTypeMapping TypeName="ModelGP.PM00200">
+        <MappingFragment StoreEntitySet="PM00200">
+          <ScalarProperty Name="VENDORID" ColumnName="VENDORID" />
+          <ScalarProperty Name="VENDNAME" ColumnName="VENDNAME" />
+          <ScalarProperty Name="VNDCHKNM" ColumnName="VNDCHKNM" />
+          <ScalarProperty Name="VENDSHNM" ColumnName="VENDSHNM" />
+          <ScalarProperty Name="VADDCDPR" ColumnName="VADDCDPR" />
+          <ScalarProperty Name="VADCDPAD" ColumnName="VADCDPAD" />
+          <ScalarProperty Name="VADCDSFR" ColumnName="VADCDSFR" />
+          <ScalarProperty Name="VADCDTRO" ColumnName="VADCDTRO" />
+          <ScalarProperty Name="VNDCLSID" ColumnName="VNDCLSID" />
+          <ScalarProperty Name="VNDCNTCT" ColumnName="VNDCNTCT" />
+          <ScalarProperty Name="ADDRESS1" ColumnName="ADDRESS1" />
+          <ScalarProperty Name="ADDRESS2" ColumnName="ADDRESS2" />
+          <ScalarProperty Name="ADDRESS3" ColumnName="ADDRESS3" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="STATE" ColumnName="STATE" />
+          <ScalarProperty Name="ZIPCODE" ColumnName="ZIPCODE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="PHNUMBR1" ColumnName="PHNUMBR1" />
+          <ScalarProperty Name="PHNUMBR2" ColumnName="PHNUMBR2" />
+          <ScalarProperty Name="PHONE3" ColumnName="PHONE3" />
+          <ScalarProperty Name="FAXNUMBR" ColumnName="FAXNUMBR" />
+          <ScalarProperty Name="UPSZONE" ColumnName="UPSZONE" />
+          <ScalarProperty Name="SHIPMTHD" ColumnName="SHIPMTHD" />
+          <ScalarProperty Name="TAXSCHID" ColumnName="TAXSCHID" />
+          <ScalarProperty Name="ACNMVNDR" ColumnName="ACNMVNDR" />
+          <ScalarProperty Name="TXIDNMBR" ColumnName="TXIDNMBR" />
+          <ScalarProperty Name="VENDSTTS" ColumnName="VENDSTTS" />
+          <ScalarProperty Name="CURNCYID" ColumnName="CURNCYID" />
+          <ScalarProperty Name="TXRGNNUM" ColumnName="TXRGNNUM" />
+          <ScalarProperty Name="PARVENID" ColumnName="PARVENID" />
+          <ScalarProperty Name="TRDDISCT" ColumnName="TRDDISCT" />
+          <ScalarProperty Name="TEN99TYPE" ColumnName="TEN99TYPE" />
+          <ScalarProperty Name="TEN99BOXNUMBER" ColumnName="TEN99BOXNUMBER" />
+          <ScalarProperty Name="MINORDER" ColumnName="MINORDER" />
+          <ScalarProperty Name="PYMTRMID" ColumnName="PYMTRMID" />
+          <ScalarProperty Name="MINPYTYP" ColumnName="MINPYTYP" />
+          <ScalarProperty Name="MINPYPCT" ColumnName="MINPYPCT" />
+          <ScalarProperty Name="MINPYDLR" ColumnName="MINPYDLR" />
+          <ScalarProperty Name="MXIAFVND" ColumnName="MXIAFVND" />
+          <ScalarProperty Name="MAXINDLR" ColumnName="MAXINDLR" />
+          <ScalarProperty Name="COMMENT1" ColumnName="COMMENT1" />
+          <ScalarProperty Name="COMMENT2" ColumnName="COMMENT2" />
+          <ScalarProperty Name="USERDEF1" ColumnName="USERDEF1" />
+          <ScalarProperty Name="USERDEF2" ColumnName="USERDEF2" />
+          <ScalarProperty Name="CRLMTDLR" ColumnName="CRLMTDLR" />
+          <ScalarProperty Name="PYMNTPRI" ColumnName="PYMNTPRI" />
+          <ScalarProperty Name="KPCALHST" ColumnName="KPCALHST" />
+          <ScalarProperty Name="KGLDSTHS" ColumnName="KGLDSTHS" />
+          <ScalarProperty Name="KPERHIST" ColumnName="KPERHIST" />
+          <ScalarProperty Name="KPTRXHST" ColumnName="KPTRXHST" />
+          <ScalarProperty Name="HOLD" ColumnName="HOLD" />
+          <ScalarProperty Name="PTCSHACF" ColumnName="PTCSHACF" />
+          <ScalarProperty Name="CREDTLMT" ColumnName="CREDTLMT" />
+          <ScalarProperty Name="WRITEOFF" ColumnName="WRITEOFF" />
+          <ScalarProperty Name="MXWOFAMT" ColumnName="MXWOFAMT" />
+          <ScalarProperty Name="SBPPSDED" ColumnName="SBPPSDED" />
+          <ScalarProperty Name="PPSTAXRT" ColumnName="PPSTAXRT" />
+          <ScalarProperty Name="DXVARNUM" ColumnName="DXVARNUM" />
+          <ScalarProperty Name="CRTCOMDT" ColumnName="CRTCOMDT" />
+          <ScalarProperty Name="CRTEXPDT" ColumnName="CRTEXPDT" />
+          <ScalarProperty Name="RTOBUTKN" ColumnName="RTOBUTKN" />
+          <ScalarProperty Name="XPDTOBLG" ColumnName="XPDTOBLG" />
+          <ScalarProperty Name="PRSPAYEE" ColumnName="PRSPAYEE" />
+          <ScalarProperty Name="PMAPINDX" ColumnName="PMAPINDX" />
+          <ScalarProperty Name="PMCSHIDX" ColumnName="PMCSHIDX" />
+          <ScalarProperty Name="PMDAVIDX" ColumnName="PMDAVIDX" />
+          <ScalarProperty Name="PMDTKIDX" ColumnName="PMDTKIDX" />
+          <ScalarProperty Name="PMFINIDX" ColumnName="PMFINIDX" />
+          <ScalarProperty Name="PMMSCHIX" ColumnName="PMMSCHIX" />
+          <ScalarProperty Name="PMFRTIDX" ColumnName="PMFRTIDX" />
+          <ScalarProperty Name="PMTAXIDX" ColumnName="PMTAXIDX" />
+          <ScalarProperty Name="PMWRTIDX" ColumnName="PMWRTIDX" />
+          <ScalarProperty Name="PMPRCHIX" ColumnName="PMPRCHIX" />
+          <ScalarProperty Name="PMRTNGIX" ColumnName="PMRTNGIX" />
+          <ScalarProperty Name="PMTDSCIX" ColumnName="PMTDSCIX" />
+          <ScalarProperty Name="ACPURIDX" ColumnName="ACPURIDX" />
+          <ScalarProperty Name="PURPVIDX" ColumnName="PURPVIDX" />
+          <ScalarProperty Name="NOTEINDX" ColumnName="NOTEINDX" />
+          <ScalarProperty Name="CHEKBKID" ColumnName="CHEKBKID" />
+          <ScalarProperty Name="MODIFDT" ColumnName="MODIFDT" />
+          <ScalarProperty Name="CREATDDT" ColumnName="CREATDDT" />
+          <ScalarProperty Name="RATETPID" ColumnName="RATETPID" />
+          <ScalarProperty Name="Revalue_Vendor" ColumnName="Revalue_Vendor" />
+          <ScalarProperty Name="Post_Results_To" ColumnName="Post_Results_To" />
+          <ScalarProperty Name="FREEONBOARD" ColumnName="FREEONBOARD" />
+          <ScalarProperty Name="GOVCRPID" ColumnName="GOVCRPID" />
+          <ScalarProperty Name="GOVINDID" ColumnName="GOVINDID" />
+          <ScalarProperty Name="DISGRPER" ColumnName="DISGRPER" />
+          <ScalarProperty Name="DUEGRPER" ColumnName="DUEGRPER" />
+          <ScalarProperty Name="DOCFMTID" ColumnName="DOCFMTID" />
+          <ScalarProperty Name="TaxInvRecvd" ColumnName="TaxInvRecvd" />
+          <ScalarProperty Name="USERLANG" ColumnName="USERLANG" />
+          <ScalarProperty Name="WithholdingType" ColumnName="WithholdingType" />
+          <ScalarProperty Name="WithholdingFormType" ColumnName="WithholdingFormType" />
+          <ScalarProperty Name="WithholdingEntityType" ColumnName="WithholdingEntityType" />
+          <ScalarProperty Name="TaxFileNumMode" ColumnName="TaxFileNumMode" />
+          <ScalarProperty Name="BRTHDATE" ColumnName="BRTHDATE" />
+          <ScalarProperty Name="LaborPmtType" ColumnName="LaborPmtType" />
+          <ScalarProperty Name="CCode" ColumnName="CCode" />
+          <ScalarProperty Name="DECLID" ColumnName="DECLID" />
+          <ScalarProperty Name="CBVAT" ColumnName="CBVAT" />
+          <ScalarProperty Name="Workflow_Approval_Status" ColumnName="Workflow_Approval_Status" />
+          <ScalarProperty Name="Workflow_Priority" ColumnName="Workflow_Priority" />
+          <ScalarProperty Name="VADCD1099" ColumnName="VADCD1099" />
+          <ScalarProperty Name="DEX_ROW_TS" ColumnName="DEX_ROW_TS" />
+          <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="RM00101">
-      <EntityTypeMapping TypeName="GPModel.RM00101">
+      <EntityTypeMapping TypeName="ModelGP.RM00101">
         <MappingFragment StoreEntitySet="RM00101">
           <ScalarProperty Name="CUSTNMBR" ColumnName="CUSTNMBR" />
           <ScalarProperty Name="CUSTNAME" ColumnName="CUSTNAME" />
@@ -107,6 +219,18 @@
           <ScalarProperty Name="INCLUDEINDP" ColumnName="INCLUDEINDP" />
           <ScalarProperty Name="DEX_ROW_TS" ColumnName="DEX_ROW_TS" />
           <ScalarProperty Name="DEX_ROW_ID" ColumnName="DEX_ROW_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwImpuestosPlanYDetalle">
+      <EntityTypeMapping TypeName="ModelGP.vwImpuestosPlanYDetalle">
+        <MappingFragment StoreEntitySet="vwImpuestosPlanYDetalle">
+          <ScalarProperty Name="taxschid" ColumnName="taxschid" />
+          <ScalarProperty Name="TAXDTLID" ColumnName="TAXDTLID" />
+          <ScalarProperty Name="TXDTLDSC" ColumnName="TXDTLDSC" />
+          <ScalarProperty Name="TXDTLTYP" ColumnName="TXDTLTYP" />
+          <ScalarProperty Name="ACTINDX" ColumnName="ACTINDX" />
+          <ScalarProperty Name="TXDTLPCT" ColumnName="TXDTLPCT" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

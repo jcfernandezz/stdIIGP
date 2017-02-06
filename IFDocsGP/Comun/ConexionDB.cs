@@ -56,11 +56,12 @@ namespace Comun
                 else
                 {                                   //Usar un usuario sql con privilegios
                     _Usuario = config.usuarioSql;
-                    _Password = config.passwordSql;
+                    _Password = config.passwordSql  ;
                 }
             }
 
             Elemento = new ConexionAFuenteDatos(_Compannia, _Usuario, _Password, _Intercompany, _ServerAddress, _IntegratedSecurity);
+
         }
     }
 }
