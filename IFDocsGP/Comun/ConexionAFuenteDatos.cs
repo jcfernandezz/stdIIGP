@@ -14,6 +14,7 @@ namespace Comun
         private bool _IntegratedSecurity = false;
         private string _ConnStr = "";
         private string _ConnStrDyn = "";
+        private string _EntityConnStr = string.Empty;
 
         public ConexionAFuenteDatos(string Compannia, string Usuario, string Password, string Intercompany, string ServerAddress, bool IntegratedSecurity)
         {
@@ -43,6 +44,14 @@ namespace Comun
                 return _ConnStrDyn = "User ID=" + _Usuario + ";Password=" + _Password + ";Initial Catalog=Dynamics;Data Source=" + _ServerAddress;
         }
 
+        private string ArmaEntityConnStr(bool SeguridadIntegrada)
+        {
+            if (SeguridadIntegrada)
+                return "metadata=res://*/ModelGP.csdl|res://*/ModelGP.ssdl|res://*/ModelGP.msl;provider=System.Data.SqlClient;provider connection string=';data source=" + _ServerAddress + ";initial catalog=" + _Intercompany + ";integrated security=True;MultipleActiveResultSets=True;App=EntityFramework';";
+            else
+                return "";  //completar aquí cuando no es seg integrada
+        }
+
         public string Compannia
         {
             get { return _Compannia; }
@@ -56,6 +65,7 @@ namespace Comun
                 _Usuario = value;
                 _ConnStr = ArmaConnStr(_IntegratedSecurity);
                 _ConnStrDyn = ArmaConnStrDynamics(IntegratedSecurity);
+                _EntityConnStr = ArmaEntityConnStr(_IntegratedSecurity);
             }
         }
 
@@ -66,6 +76,7 @@ namespace Comun
                 _Password = value;
                 _ConnStr = ArmaConnStr(_IntegratedSecurity);
                 _ConnStrDyn = ArmaConnStrDynamics(IntegratedSecurity);
+                _EntityConnStr = ArmaEntityConnStr(_IntegratedSecurity);
             }
         }
 
@@ -75,6 +86,7 @@ namespace Comun
             set {
                 _Intercompany = value;
                 _ConnStr = ArmaConnStr(_IntegratedSecurity);
+                _EntityConnStr = ArmaEntityConnStr(_IntegratedSecurity);
             }
         }
 
@@ -85,17 +97,13 @@ namespace Comun
                 _ServerAddress = value;
                 _ConnStr = ArmaConnStr(_IntegratedSecurity);
                 _ConnStrDyn = ArmaConnStrDynamics(IntegratedSecurity);
+                _EntityConnStr = ArmaEntityConnStr(_IntegratedSecurity);
             }
         }
 
         public bool IntegratedSecurity
         {
             get { return _IntegratedSecurity; }
-            //set { 
-            //    _IntegratedSecurity = value; 
-            //    _ConnStr = ArmaConnStr(_IntegratedSecurity);
-            //    _ConnStrDyn = ArmaConnStrDynamics(IntegratedSecurity);
-            //}
         }
 
         public string ConnStr
@@ -107,6 +115,15 @@ namespace Comun
         public string ConnStrDyn
         {
             get { return _ConnStrDyn; }
+        }
+
+        public string EntityConnStr
+        {
+            get
+            {
+                return _EntityConnStr;
+            }
+
         }
     }
 }

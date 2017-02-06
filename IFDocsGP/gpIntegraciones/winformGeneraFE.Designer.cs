@@ -150,7 +150,7 @@
             // 
             this.genFacturaElectrónicaV10ToolStripMenuItem.Name = "genFacturaElectrónicaV10ToolStripMenuItem";
             this.genFacturaElectrónicaV10ToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.genFacturaElectrónicaV10ToolStripMenuItem.Text = "Integraciones a GP v. 2.6.0";
+            this.genFacturaElectrónicaV10ToolStripMenuItem.Text = "Integraciones a GP v. 2.6.1";
             // 
             // toolStripMenuItem2
             // 
@@ -240,7 +240,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Desktop;
+            this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel2.Controls.Add(this.cmbBxCompannia);
             this.panel2.Controls.Add(this.lblUsuario);
             this.panel2.Controls.Add(this.lblFecha);
@@ -252,7 +252,7 @@
             // 
             // cmbBxCompannia
             // 
-            this.cmbBxCompannia.BackColor = System.Drawing.SystemColors.Desktop;
+            this.cmbBxCompannia.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.cmbBxCompannia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBxCompannia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbBxCompannia.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;

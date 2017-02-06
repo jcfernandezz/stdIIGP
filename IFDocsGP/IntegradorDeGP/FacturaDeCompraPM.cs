@@ -47,7 +47,7 @@ namespace IntegradorDeGP
         {
             int n = 0;
             string taxschid = string.Empty;
-            using (EntitiesGP gp = new EntitiesGP())
+            using (EntitiesGP gp = new EntitiesGP(_DatosConexionDB.Elemento.EntityConnStr))
             {
                 var c = gp.PM00200.Where(w => w.VENDORID.Equals(vendorid.Trim()))
                     .Select(s => new { taxschid = s.TAXSCHID });
@@ -65,7 +65,7 @@ namespace IntegradorDeGP
 
         private void armaDetalleImpuestos(String taxschid)
         {
-            using (EntitiesGP gp = new EntitiesGP())
+            using (EntitiesGP gp = new EntitiesGP(_DatosConexionDB.Elemento.EntityConnStr))
             {
                 var detalleImpuestosCompras = gp.vwImpuestosPlanYDetalle.Where(w => w.TXDTLTYP.Equals(2) && w.taxschid.Equals(taxschid))
                     .Select(s => new { s.TAXDTLID, s.TXDTLPCT});
@@ -98,7 +98,7 @@ namespace IntegradorDeGP
         /// <param name="param"></param>
         public void armaFacturaPmEconn(ExcelWorksheet hojaXl, int fila, string sTimeStamp, Parametros param)
         {
-            //Stream outputFile = File.Create(@"C:\gpusuario\traceArmaFActuraPmEconn"+fila.ToString()+".txt");
+            //Stream outputFile = File.Create(@"C:\gpusuario\traceArmaFActuraPmEconn" + fila.ToString() + ".txt");
             //TextWriterTraceListener textListener = new TextWriterTraceListener(outputFile);
             //TraceSource trace = new TraceSource("trSource", SourceLevels.All);
             try
@@ -106,6 +106,7 @@ namespace IntegradorDeGP
                 //trace.Listeners.Clear();
                 //trace.Listeners.Add(textListener);
                 //trace.TraceInformation("arma factura pm econn");
+                //trace.TraceInformation("fila: " + fila.ToString() + " col vendorid:" +param.facturaPmVENDORID);
 
                 iError = 0;
                 string esf = hojaXl.Cells[fila, param.facturaPmEsFactura].Value.ToString().Trim().ToUpper();
@@ -162,7 +163,6 @@ namespace IntegradorDeGP
                 facturaPm.CURNCYID = hojaXl.Cells[fila, param.facturaPmCURNCYID].Value.ToString();
 
                 facturaPm.PRCHAMNT = Decimal.Round(Convert.ToDecimal(hojaXl.Cells[fila, param.facturaPmPRCHAMNT].Value.ToString(), CultureInfo.InvariantCulture), 2);
-
 
                 if (param.DistribucionPmAplica.Equals("SI"))
                     facturaPm.CREATEDIST = 0;               //no crea el asiento contable automáticamente
