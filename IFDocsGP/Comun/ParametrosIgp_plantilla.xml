@@ -74,7 +74,7 @@
       <GenericVENDORID>9</GenericVENDORID>
       <rowCHEKBKID>0</rowCHEKBKID>
       <colCHEKBKID>0</colCHEKBKID>
-      <EsFactura>3</EsFactura>
+      <EsFactura>[indicar el número de columna que hace lo siguiente: # indica el tipo de factura o SI indica que es factura o NO indica que es cargo misc]</EsFactura>
       <FilaInicial>2</FilaInicial>
       <ColumnaMensajes>14</ColumnaMensajes>
       <DOCNUMBR>2</DOCNUMBR>
