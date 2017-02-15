@@ -23,19 +23,27 @@ namespace gp.InterfacesPersonalizadas
     public partial class winformGeneraFE : Form
     {
         string ultimoMensaje = "";
-        int estadoCompletadoCia = 0;
-        private short idxNomArchivo = 1;                //columna Nombre del archivo
+        private short idxNomArchivo = 1;                                                        //columna Nombre del archivo
 
-        private ConexionDB DatosConexionDB = new ConexionDB();  //Lee la configuración del archivo xml y obtiene los datos de conexión.
+        private ConexionDB DatosConexionDB = new ConexionDB(Environment.GetCommandLineArgs());  //Lee la configuración del archivo xml y obtiene los datos de conexión.
         Parametros Compannia = null;
         private static FileSystemWatcher watcher = new FileSystemWatcher();
-
         delegate void actualizaListaETCallback(int i, string carpeta);
         delegate void actualizaListaFNCallback(int i, string carpeta);
 
         public winformGeneraFE()
         {
             InitializeComponent();
+            try
+            {
+                this.Text = "Integra documentos GP - " + DatosConexionDB.NombreArchivoParametros.Replace(".xml", "").Substring(14).ToUpper();
+                this.tsButtonGenerar.ToolTipText = "Procesar " + DatosConexionDB.NombreArchivoParametros.Replace(".xml", "").Substring(14).ToUpper();
+            }
+            catch (Exception ex)
+            {
+                txtbxMensajes.Text = "No se puede ingresar a la aplicación. Edite su acceso directo e incluya el nombre del archivo de parámetros. " + ex.Message;
+                HabilitarVentana(false, false, false, false, false, true);
+            }
         }
 
         private void winformGeneraFE_Load(object sender, EventArgs e)
@@ -62,7 +70,7 @@ namespace gp.InterfacesPersonalizadas
             txtbxMensajes.AppendText("...\r\n");
             txtbxMensajes.Refresh();
 
-            Compannia = new Parametros(DatosConexionDB.Elemento.Intercompany);
+            Compannia = new Parametros(DatosConexionDB.NombreArchivoParametros, DatosConexionDB.Elemento.Intercompany);
             txtbxMensajes.AppendText(Compannia.ultimoMensaje);
             txtbxMensajes.Refresh();
 
@@ -180,8 +188,8 @@ namespace gp.InterfacesPersonalizadas
             //    HabilitarVentana(false,false,false,false,false, true);
             //}
 
-            Parametros configCfd = new Parametros(DatosConexionDB.Elemento.Intercompany);   //Carga configuración desde xml
-            estadoCompletadoCia = configCfd.intEstadoCompletado;
+            Parametros configCfd = new Parametros(DatosConexionDB.NombreArchivoParametros, DatosConexionDB.Elemento.Intercompany);   //Carga configuración desde xml
+            //estadoCompletadoCia = configCfd.intEstadoCompletado;
 
             if (configCfd.iError != 0)
             {
@@ -190,7 +198,7 @@ namespace gp.InterfacesPersonalizadas
                 return;
             }
 
-            HabilitarVentana(true, configCfd.anula, configCfd.imprime, configCfd.publica, configCfd.envia, true);
+            HabilitarVentana(true, false, false, false, false, true);
             AplicaFiltroYActualizaPantalla();
         }
 
@@ -272,7 +280,10 @@ namespace gp.InterfacesPersonalizadas
             txtbxMensajes.Refresh();
         }
 
-        void ProcesaFacturasCompra()   //object sender, DoWorkEventArgs doWorkEventArgs)
+        /// <summary>
+        /// Procesa la carga de cualquier documento de compras. El nombre del archivo de parámetros está en DatosConexionDB
+        /// </summary>
+        void ProcesaComprasDeAcuerdoAParametros()   //object sender, DoWorkEventArgs doWorkEventArgs)
         {
             IntegraComprasGP ic = new IntegraComprasGP(DatosConexionDB);
             if (ic.iError == 0)
@@ -306,7 +317,7 @@ namespace gp.InterfacesPersonalizadas
         }
 
         /// <summary>
-        /// Inicia proceso de carga de facturas POP
+        /// Inicia proceso de carga de documentos GP
         /// </summary>
         /// <param name="e"></param>
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -316,7 +327,8 @@ namespace gp.InterfacesPersonalizadas
             HabilitarVentana(false, false, false, false, false, false);
             watcher.EnableRaisingEvents = false;
 
-            ProcesaFacturasCompra();
+            ProcesaComprasDeAcuerdoAParametros();   //Procesa la carga de cualquier doc de compras
+
             //ProcesaFacturasVenta();
 
             HabilitarVentana(true, true, true, true, true, true);

@@ -24,6 +24,8 @@ grant select, update, insert on dbo.pm00200 to rol_InterfazCompras;
 grant select, update, insert on dbo.pm10000 to rol_InterfazCompras;
 grant select, update, insert on dbo.pm10500 to rol_InterfazCompras;
 grant select, update, insert on dbo.pm10100 to rol_InterfazCompras;
+grant select, update, insert on dbo.pm10400 to rol_InterfazCompras;
+
 grant select on dbo.pm20000 to rol_InterfazCompras;
 grant select on dbo.pm30200 to rol_InterfazCompras;
 grant select on dbo.vwImpuestosPlanYDetalle to rol_InterfazCompras;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <listaParametros>
-  <servidor>GILABASRAP06</servidor>
+  <servidor>TP-GP\GPTP</servidor>
   <seguridadIntegrada>1</seguridadIntegrada>
   <usuariosql>-</usuariosql>
   <passwordsql>-</passwordsql>
-  <compannia bd="GUSA" nombre="Gila USA">
-	<rutaCarpeta>C:\gpusuario\GUSA</rutaCarpeta>
-	<formatoFecha>dd/MM/yyyy</formatoFecha>
+  <compannia bd="TESTP" nombre="Team Pediátrico TEST">
+	<rutaCarpeta>C:\gpusuario\TESTP</rutaCarpeta>
+	<formatoFecha>MM/dd/yyyy</formatoFecha>
 	<impuestos>
 			<detalleImpuestos>
 				<igv>na</igv>
@@ -74,7 +74,7 @@
 			<UNITPRCE>7</UNITPRCE>
 	</facturaSopDe>
     <facturaPm>
-      <BatchCHEKBKID>HSBC DOLARES</BatchCHEKBKID>
+      <BatchCHEKBKID>BBVA</BatchCHEKBKID>
       <GenericVENDORID>9</GenericVENDORID>
       <rowCHEKBKID>0</rowCHEKBKID>
       <colCHEKBKID>0</colCHEKBKID>
@@ -91,28 +91,18 @@
       <DUEDATE>8</DUEDATE>    
       <PAGADO>50</PAGADO>    
       <DISTRIBUCION>
-		<APLICA>SI</APLICA>
-		<CUENTADEBE>F15-000-52200</CUENTADEBE>
-		<CUENTAHABER>F15-000-20611</CUENTAHABER>
+		<APLICA>NO</APLICA>
+		<CUENTADEBE>01-100-5011010</CUENTADEBE>
+		<CUENTAHABER>01-000-2111020</CUENTAHABER>
       </DISTRIBUCION>
     </facturaPm>
     <facturaPmAdicionales>
-	  <LOCALIZACION>ARG</LOCALIZACION>
+	  <LOCALIZACION>NA</LOCALIZACION>
       	  <NumAutorizacion>50</NumAutorizacion>
           <CodigoControl>50</CodigoControl>
 	  <TIPORETENCION>ARG</TIPORETENCION>
 	  <RETENCION>9</RETENCION>
     </facturaPmAdicionales>
-    <pagosPm>
-      <PMNTNMBR>-1</PMNTNMBR>
-      <VENDORID>3</VENDORID>
-      <DOCNUMBR>1</DOCNUMBR>
-      <DOCAMNT>9</DOCAMNT>
-      <DOCDATE>2</DOCDATE>
-      <PYENTTYP>5</PYENTTYP>
-      <CHEKBKID>4</CHEKBKID>
-      <TRXDSCRN>7</TRXDSCRN>
-    </pagosPm>
     <proveedor>
       <DefaultVNDCLSID>LOCAL BS</DefaultVNDCLSID>
     </proveedor>
@@ -120,9 +110,9 @@
       <DefaultCUSTCLAS>-</DefaultCUSTCLAS>
     </Cliente>
   </compannia>
-    <compannia bd="GSPN" nombre="Gila SPN">
-	<rutaCarpeta>C:\gpusuario\GSPN</rutaCarpeta>
-	<formatoFecha>dd/MM/yyyy</formatoFecha>
+  <compannia bd="TPOPE" nombre="Team Pediátrico SRL Operativo">
+	<rutaCarpeta>C:\gpusuario\TPOPE</rutaCarpeta>
+	<formatoFecha>MM/dd/yyyy</formatoFecha>
 	<impuestos>
 			<detalleImpuestos>
 				<igv>na</igv>
@@ -183,13 +173,14 @@
 			<duedate>3</duedate>
 			<TXRGNNUM>4</TXRGNNUM>
 			<CUSTNAME>0</CUSTNAME>
+			<UNITPRCE>0</UNITPRCE>
 	</facturaSopCa>	
 	<facturaSopDe>
 			<filaInicial>0</filaInicial>
 			<UNITPRCE>7</UNITPRCE>
 	</facturaSopDe>
     <facturaPm>
-      <BatchCHEKBKID>HSBC EUROS</BatchCHEKBKID>
+      <BatchCHEKBKID>BBVA</BatchCHEKBKID>
       <GenericVENDORID>9</GenericVENDORID>
       <rowCHEKBKID>0</rowCHEKBKID>
       <colCHEKBKID>0</colCHEKBKID>
@@ -206,28 +197,18 @@
       <DUEDATE>8</DUEDATE>    
       <PAGADO>50</PAGADO>    
       <DISTRIBUCION>
-		<APLICA>SI</APLICA>
-		<CUENTADEBE>F70-000-52200</CUENTADEBE>
-		<CUENTAHABER>F70-000-20611</CUENTAHABER>
+		<APLICA>NO</APLICA>
+		<CUENTADEBE>01-100-5011010</CUENTADEBE>
+		<CUENTAHABER>01-000-2111020</CUENTAHABER>
       </DISTRIBUCION>
     </facturaPm>
     <facturaPmAdicionales>
 	  <LOCALIZACION>ARG</LOCALIZACION>
       	  <NumAutorizacion>50</NumAutorizacion>
           <CodigoControl>50</CodigoControl>
-	  <TIPORETENCION>ARG</TIPORETENCION>
-	  <RETENCION>9</RETENCION>
+	  <TIPORETENCION>NA</TIPORETENCION>
+	  <RETENCION>19</RETENCION>
     </facturaPmAdicionales>
-    <pagosPm>
-      <PMNTNMBR>-1</PMNTNMBR>
-      <VENDORID>3</VENDORID>
-      <DOCNUMBR>1</DOCNUMBR>
-      <DOCAMNT>9</DOCAMNT>
-      <DOCDATE>2</DOCDATE>
-      <PYENTTYP>5</PYENTTYP>
-      <CHEKBKID>4</CHEKBKID>
-      <TRXDSCRN>7</TRXDSCRN>
-    </pagosPm>
     <proveedor>
       <DefaultVNDCLSID>LOCAL BS</DefaultVNDCLSID>
     </proveedor>
