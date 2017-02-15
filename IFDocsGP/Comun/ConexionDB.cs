@@ -18,6 +18,7 @@ namespace Comun
         private string _Password = "";
         private string _Intercompany = "";
         private string _ServerAddress = "";
+        private string _nombreArchivoParametros = string.Empty;
         private bool _IntegratedSecurity = false;
         private List<Bds> _listaCompannias;
 
@@ -37,10 +38,26 @@ namespace Comun
             }
         }
 
-        public ConexionDB ()
+        public string NombreArchivoParametros
         {
+            get
+            {
+                return _nombreArchivoParametros;
+            }
+
+            set
+            {
+                _nombreArchivoParametros = value;
+            }
+        }
+
+        public ConexionDB(string[] argumentosAplicacion)
+        {
+
+            _nombreArchivoParametros = argumentosAplicacion[1];
+
             ListaCompannias = new List<Bds>();
-            Parametros config = new Parametros();
+            Parametros config = new Parametros(_nombreArchivoParametros);
             _ServerAddress = config.servidor;
             ListaCompannias = config.ListaCompannia;
             ultimoMensaje = config.ultimoMensaje;
@@ -56,12 +73,38 @@ namespace Comun
                 else
                 {                                   //Usar un usuario sql con privilegios
                     _Usuario = config.usuarioSql;
-                    _Password = config.passwordSql  ;
+                    _Password = config.passwordSql;
                 }
             }
 
             Elemento = new ConexionAFuenteDatos(_Compannia, _Usuario, _Password, _Intercompany, _ServerAddress, _IntegratedSecurity);
-
         }
+
+        //public ConexionDB ()
+        //{
+        //    ListaCompannias = new List<Bds>();
+        //    Parametros config = new Parametros();
+        //    _ServerAddress = config.servidor;
+        //    ListaCompannias = config.ListaCompannia;
+        //    ultimoMensaje = config.ultimoMensaje;
+
+        //    //Si la app no viene de GP usar seguridad integrada o un usuario sql (configurado en el archivo de inicio)
+        //    if (_Usuario.Equals(string.Empty))
+        //    {
+        //        _IntegratedSecurity = config.seguridadIntegrada;
+        //        _Intercompany = "Dynamics";
+
+        //        if (_IntegratedSecurity)            //Usar seguridad integrada
+        //            _Usuario = WindowsIdentity.GetCurrent().Name.Trim();
+        //        else
+        //        {                                   //Usar un usuario sql con privilegios
+        //            _Usuario = config.usuarioSql;
+        //            _Password = config.passwordSql  ;
+        //        }
+        //    }
+
+        //    Elemento = new ConexionAFuenteDatos(_Compannia, _Usuario, _Password, _Intercompany, _ServerAddress, _IntegratedSecurity);
+
+        //}
     }
 }

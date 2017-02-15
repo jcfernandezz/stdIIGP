@@ -77,7 +77,7 @@ namespace IntegradorDeGP
         {
             _iError = 0;
             _DatosConexionDB = DatosConexionDB;                                                //Lee la configuración y obtiene los datos de conexión.
-            _Param = new Parametros(DatosConexionDB.Elemento.Intercompany);
+            _Param = new Parametros(_DatosConexionDB.NombreArchivoParametros, DatosConexionDB.Elemento.Intercompany);
 
             if (_Param.iError != 0)
             {

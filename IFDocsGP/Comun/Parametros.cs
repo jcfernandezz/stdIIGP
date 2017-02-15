@@ -19,6 +19,7 @@ namespace Comun
         public string nombre { get { return _nombre; } }
         public string tipo { get { return _tipo; } }
     }
+
     public class Bds
     {
         private string _id;
@@ -78,7 +79,7 @@ namespace Comun
     {
         public int iError = 0;
         public string ultimoMensaje = "";
-        public string nombreArchivoParametros = "ParametrosIgp.xml";
+        //private string nombreArchivoParametros = "ParametrosIgp.xml";
         public string defaultInventoryItem = "MISCELLANEOUS";
         public string defaultDeposit = "MAIN";
         public string functionalCurrency = "BOB";
@@ -171,13 +172,6 @@ namespace Comun
         private string _passwordSql = "";
         private List<Bds> _listaCompannia;
 
-        private string _URLArchivoXSD = "";
-        private string _emite = "0";
-        private string _anula = "0";
-        private string _imprime = "0";
-        private string _publica = "0";
-        private string _envia = "0";
-
         private string _facturaSopSopnumbe;
         private string _facturaSopDocdate;
         private string _facturaSopDuedate;
@@ -188,7 +182,19 @@ namespace Comun
         private string _facturaSopCUSTNAME;
         private string _clienteDefaultCUSTCLAS;
 
-        public Parametros()
+        private string _pagosPmColMensajes;
+        private string _pagosPmPMNTNMBR;
+        private string _pagosPmVENDORID;
+        private string _pagosPmDOCNUMBR;
+        private string _pagosPmDOCAMNT;
+        private string _pagosPmDOCDATE;
+        private string _pagosPmPYENTTYP;
+        private string _pagosPmCHEKBKID;
+        private string _pagosPmTRXDSCRN;
+
+        private string _URLArchivoXSD = "";
+
+        public Parametros(string nombreArchivoParametros)
         {
             try
             {
@@ -219,7 +225,38 @@ namespace Comun
             }
         }
 
-        public Parametros(string IdCompannia)
+        //public Parametros()
+        //{
+        //    try
+        //    {
+        //        this.iError = 0;
+        //        XmlDocument listaParametros = new XmlDocument();
+        //        listaParametros.Load(new XmlTextReader(nombreArchivoParametros));
+        //        XmlNodeList listaElementos = listaParametros.DocumentElement.ChildNodes;
+        //        _listaCompannia = new List<Bds>();
+
+        //        foreach (XmlNode n in listaElementos)
+        //        {
+        //            if (n.Name.Equals("servidor"))
+        //                this._servidor = n.InnerXml;
+        //            if (n.Name.Equals("seguridadIntegrada"))
+        //                this._seguridadIntegrada = n.InnerXml;
+        //            if (n.Name.Equals("usuariosql"))
+        //                this._usuarioSql = n.InnerXml;
+        //            if (n.Name.Equals("passwordsql"))
+        //                this._passwordSql = n.InnerXml;
+        //            if (n.Name.Equals("compannia"))
+        //                _listaCompannia.Add(new Bds(n.Attributes["bd"].Value, n.Attributes["nombre"].Value));
+        //        }
+        //    }
+        //    catch (Exception eprm)
+        //    {
+        //        iError++;
+        //        ultimoMensaje = "No se pudo obtener acceso al servidor. Revise el archivo de configuración. [Parametros()]" + eprm.Message;
+        //    }
+        //}
+
+        public Parametros(string nombreArchivoParametros, string IdCompannia)
         {
             try
             {
@@ -275,6 +312,16 @@ namespace Comun
                 _distribucionPmCuentaDebe = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/facturaPm/DISTRIBUCION/CUENTADEBE/text()").Value;
                 _distribucionPmCuentaHaber = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/facturaPm/DISTRIBUCION/CUENTAHABER/text()").Value;
 
+                _pagosPmColMensajes = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/ColMensajes/text()").Value;
+                _pagosPmPMNTNMBR = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/PMNTNMBR/text()").Value;
+                _pagosPmVENDORID = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/VENDORID/text()").Value;
+                _pagosPmDOCNUMBR = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/DOCNUMBR/text()").Value;
+                _pagosPmDOCAMNT = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/DOCAMNT/text()").Value;
+                _pagosPmDOCDATE = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/DOCDATE/text()").Value;
+                _pagosPmPYENTTYP = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/PYENTTYP/text()").Value;
+                _pagosPmCHEKBKID = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/CHEKBKID/text()").Value;
+                _pagosPmTRXDSCRN = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/pagosPm/TRXDSCRN/text()").Value;
+
                 _clienteDefaultCUSTCLAS = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/Cliente/DefaultCUSTCLAS/text()").Value;
                 _facturaSopSopnumbe = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/facturaSopCa/sopnumbe/text()").Value;
                 _facturaSopDocdate = elemento.SelectSingleNode("//compannia[@bd='" + IdCompannia + "']/facturaSopCa/docdate/text()").Value;
@@ -319,7 +366,21 @@ namespace Comun
                 ultimoMensaje = "No se pudo obtener la configuración de la compañía. Revise el archivo de configuración. " + IdCompannia + ". [Parametros(Compañía)] " + eprm.Message;
             }
         }
-    #region Parámetros de seguridad
+
+        public List<Bds> ListaCompannia
+        {
+            get
+            {
+                return _listaCompannia;
+            }
+
+            set
+            {
+                _listaCompannia = value;
+            }
+        }
+
+        #region Parámetros de seguridad
         public string servidor
         {
             get { return _servidor; }
@@ -354,7 +415,7 @@ namespace Comun
         }
     #endregion
 
-    #region Configuraciones generales de rendiciones de caja
+        #region Configuraciones generales de rendiciones de caja
         /// <summary>
         /// Ruta donde están las carpetas En trabajo y En proceso
         /// </summary>
@@ -413,7 +474,7 @@ namespace Comun
         }
     #endregion
 
-    #region Columnas del archivo excel: Campos de facturas POP
+        #region Columnas del archivo excel: Campos de facturas POP
 
         public string facturaPopCafilaInicial 
         {
@@ -463,7 +524,7 @@ namespace Comun
         }
     #endregion
 
-    #region Columnas del archivo excel: Campos de facturas PM
+        #region Columnas del archivo excel: Campos de facturas PM
 
         public string facturaPmBatchCHEKBKID
         {
@@ -573,7 +634,7 @@ namespace Comun
 
     #endregion
 
-    #region Columnas del archivo excel: Campos de datos adicionales de la factura
+        #region Columnas del archivo excel: Campos de datos adicionales de la factura
 
         public string FacturaPmLOCALIZACION
         {
@@ -591,9 +652,22 @@ namespace Comun
             get { return Convert.ToInt32(_addCodigoControl); }
             set { _addCodigoControl = value.ToString(); }
         }
-    #endregion
+        public string FacturaPmTIPORETENCION
+        {
+            get
+            {
+                return _facturaPmTIPORETENCION;
+            }
 
-    #region Columnas del archivo excel: Campos de datos adicionales de facturas POP en Perú
+            set
+            {
+                _facturaPmTIPORETENCION = value;
+            }
+        }
+
+        #endregion
+
+        #region Columnas del archivo excel: Campos de datos adicionales de facturas POP en Perú
         public string nsa_tipo_comprob
         { 
             get { return _nsa_tipo_comprob;}
@@ -688,7 +762,7 @@ namespace Comun
         }
     #endregion
 
-    #region Columnas del archivo excel: Campos del detalle de facturas POP
+        #region Columnas del archivo excel: Campos del detalle de facturas POP
         public string facturaPopDefilaInicial
         {
             get { return _facturaPopDefilaInicial; }
@@ -725,58 +799,7 @@ namespace Comun
         }
     #endregion
 
-    #region Datos del proveedor
-        public string defaultVNDCLSID
-        {
-            get { return _defaultVNDCLSID; }
-            set { _defaultVNDCLSID = value; }
-        }
-    #endregion
-
-        public string URLArchivoXSD
-        {
-            get { return _URLArchivoXSD; }
-            set { _URLArchivoXSD = value; }
-        }
-
-        public int intEstadoCompletado
-        {
-            get
-            {
-                return
-                        Convert.ToInt32(_emite) +
-                    2 * 0 +
-                    4 * Convert.ToInt32(_imprime) +
-                    8 * Convert.ToInt32(_publica) +
-                    16 * Convert.ToInt32(_envia);
-            }
-        }
-
-        public bool emite
-        {
-            get { return _emite.Equals("1"); }
-        }
-
-        public bool anula
-        {
-            get { return _anula.Equals("1"); }
-        }
-
-        public bool imprime
-        {
-            get { return _imprime.Equals("1"); }
-        }
-
-        public bool publica
-        {
-            get { return _publica.Equals("1"); }
-        }
-
-        public bool envia
-        {
-            get { return _envia.Equals("1"); }
-        }
-
+        #region Distribución facturas pm
         public string DistribucionPmAplica
         {
             get
@@ -815,33 +838,9 @@ namespace Comun
                 _distribucionPmCuentaHaber = value;
             }
         }
+        #endregion
 
-        public List<Bds> ListaCompannia
-        {
-            get
-            {
-                return _listaCompannia;
-            }
-
-            set
-            {
-                _listaCompannia = value;
-            }
-        }
-
-        public string FacturaPmTIPORETENCION
-        {
-            get
-            {
-                return _facturaPmTIPORETENCION;
-            }
-
-            set
-            {
-                _facturaPmTIPORETENCION = value;
-            }
-        }
-
+        #region Factura SOP cabecera y detalle
         public string FacturaSopnumbe
         {
             get
@@ -945,7 +944,135 @@ namespace Comun
                 _facturaSopCUSTNAME = value;
             }
         }
+        #endregion
 
+        #region Pagos PM
+        public int PagosPmColMensajes
+        {
+            get
+            {
+                return int.Parse(_pagosPmColMensajes);
+            }
+
+            set
+            {
+                _pagosPmColMensajes = value.ToString();
+            }
+        }
+        public int PagosPmPMNTNMBR
+        {
+            get
+            {
+                return int.Parse(_pagosPmPMNTNMBR);
+            }
+
+            set
+            {
+                _pagosPmPMNTNMBR = value.ToString();
+            }
+        }
+
+        public int PagosPmVENDORID
+        {
+            get
+            {
+                return int.Parse(_pagosPmVENDORID);
+            }
+
+            set
+            {
+                _pagosPmVENDORID = value.ToString();
+            }
+        }
+
+        public int PagosPmDOCNUMBR
+        {
+            get
+            {
+                return int.Parse(_pagosPmDOCNUMBR);
+            }
+
+            set
+            {
+                _pagosPmDOCNUMBR = value.ToString();
+            }
+        }
+
+        public int PagosPmDOCAMNT
+        {
+            get
+            {
+                return int.Parse(_pagosPmDOCAMNT);
+            }
+
+            set
+            {
+                _pagosPmDOCAMNT = value.ToString();
+            }
+        }
+
+        public int PagosPmDOCDATE
+        {
+            get
+            {
+                return int.Parse(_pagosPmDOCDATE);
+            }
+
+            set
+            {
+                _pagosPmDOCDATE = value.ToString();
+            }
+        }
+
+        public int PagosPmPYENTTYP
+        {
+            get
+            {
+                return int.Parse(_pagosPmPYENTTYP);
+            }
+
+            set
+            {
+                _pagosPmPYENTTYP = value.ToString();
+            }
+        }
+
+        public int PagosPmCHEKBKID
+        {
+            get
+            {
+                return int.Parse(_pagosPmCHEKBKID);
+            }
+
+            set
+            {
+                _pagosPmCHEKBKID = value.ToString();
+            }
+        }
+
+        public int PagosPmTRXDSCRN
+        {
+            get
+            {
+                return int.Parse(_pagosPmTRXDSCRN);
+            }
+
+            set
+            {
+                _pagosPmTRXDSCRN = value.ToString();
+            }
+        }
+        #endregion
+
+        #region Datos del proveedor
+        public string defaultVNDCLSID
+        {
+            get { return _defaultVNDCLSID; }
+            set { _defaultVNDCLSID = value; }
+        }
+        #endregion
+
+        #region Datos del cliente
         public string ClienteDefaultCUSTCLAS
         {
             get
@@ -958,5 +1085,21 @@ namespace Comun
                 _clienteDefaultCUSTCLAS = value;
             }
         }
+
+        #endregion
+
+        public string URLArchivoXSD
+        {
+            get
+            {
+                return _URLArchivoXSD;
+            }
+
+            set
+            {
+                _URLArchivoXSD = value;
+            }
+        }
+
     }
 }

@@ -14,4 +14,7 @@
     <VerifyUploadedFiles>true</VerifyUploadedFiles>
     <ErrorReportUrlHistory />
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartArguments>ParametrosIgp.facturaspm.xml</StartArguments>
+  </PropertyGroup>
 </Project>

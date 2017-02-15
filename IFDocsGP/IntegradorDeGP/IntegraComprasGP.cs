@@ -53,7 +53,7 @@ namespace IntegradorDeGP
         {
             this.iError = 0;
             _DatosConexionDB = DatosConexionDB;                                                //Lee la configuración y obtiene los datos de conexión.
-            _Param = new Parametros(DatosConexionDB.Elemento.Intercompany);
+            _Param = new Parametros(_DatosConexionDB.NombreArchivoParametros, DatosConexionDB.Elemento.Intercompany);
 
             if (_Param.iError != 0)
             {
@@ -350,6 +350,61 @@ namespace IntegradorDeGP
         }
 
         /// <summary>
+        /// Crea el xml de un pago manual PM a partir de una fila de datos en una hoja excel.
+        /// </summary>
+        /// <param name="hojaXl">Hoja excel</param>
+        /// <param name="filaXl">Fila de la hoja excel a procesar</param>
+        public void integraPagoPM(ExcelWorksheet hojaXl, int filaXl, string sTimeStamp)
+        {
+            this.iError = 0;
+            eConnectType docEConnectPM = new eConnectType();
+            PagoManualPM pago = new PagoManualPM(_DatosConexionDB);
+            try
+            {
+                //Prepara pago
+                pago.preparaPagoPM(hojaXl, filaXl, sTimeStamp, _Param);
+                this._filaNuevaFactura = pago.iniciaNuevoDocEn;
+                this.sMensajeDocu = "Fila: " + filaXl.ToString() + " Número Doc: " + pago.pagoPm.DOCNUMBR + " Proveedor: " + pago.pagoPm.VENDORID + " Monto: " + pago.pagoPm.DOCAMNT.ToString();
+
+                if (this.iError == 0 && pago.iError != 0)
+                {
+                    this.sMensaje = pago.sMensaje;
+                    this.iError++;
+                }
+
+                //Ingresa el pago a GP
+                if (this.iError == 0)
+                {
+                    docEConnectPM.PMManualCheckType = pago.arrPagoPmType;
+                    this.serializa(docEConnectPM);
+
+                    //debug!!!!
+                    //this.iError++;
+                    //sMensaje = _sDocXml;
+
+                    if (this.iError == 0)
+                        this.integraTransactionXml();
+                }
+
+            }
+            catch (eConnectException eConnErr)
+            {
+                sMensaje = "Excepción al preparar el pago. " + eConnErr.Message + " " + eConnErr.TargetSite.ToString();
+                iError++;
+            }
+            catch (ApplicationException ex)
+            {
+                sMensaje = "Excepción de aplicación. " + ex.Message + " " + ex.TargetSite.ToString();
+                iError++;
+            }
+            catch (Exception errorGral)
+            {
+                sMensaje = "Excepción. " + errorGral.Message + " " + errorGral.TargetSite.ToString();
+                iError++;
+            }
+        }
+
+        /// <summary>
         /// Integra un documento xml sDocXml a GP.
         /// </summary>
         public void integraEntityXml()
@@ -439,7 +494,7 @@ namespace IntegradorDeGP
                 foreach(string item in archivosSeleccionados)
                 {
                     this.iError = 0;
-                    string sTimeStamp = System.DateTime.Now.ToString("yyMMddHHmmssfff");
+                    string sTimeStamp = System.DateTime.Now.ToString("yyMMdd.HHmmss");
                     string sNombreArchivo = item;   
 
                     archivosEnTrabajo.abreArchivoExcel(enTrabajoDir.ToString(), sNombreArchivo);
@@ -452,16 +507,36 @@ namespace IntegradorDeGP
                         int iFilasIntegradas = 0;
                         int iFacturaIniciaEn = 0;
                         int iAntesIntegradas = 0;
+                        int _columnaMensajes = 20;
+
+                        bool facturasPm = _DatosConexionDB.NombreArchivoParametros.Contains("facturaspm");
+                        bool pagosPm = _DatosConexionDB.NombreArchivoParametros.Contains("pagospm");
+
+                        if (facturasPm)
+                            _columnaMensajes = _Param.facturaPmColumnaMensajes;
+                        if (pagosPm)
+                            _columnaMensajes = _Param.PagosPmColMensajes;
+
+
                         OnProgreso(1, "INICIANDO CARGA DE ARCHIVO "+ sNombreArchivo + "...");              //Notifica al suscriptor
                         if (startRow > 1)
-                            hojaXl.Cells[startRow - 1, this._Param.facturaPmColumnaMensajes].Value = "Observaciones";
+                            hojaXl.Cells[startRow - 1, _columnaMensajes].Value = "Observaciones";
 
                         for (int rowNumber = startRow; rowNumber <= hojaXl.Dimension.End.Row; rowNumber++)
                         {
-                            if (hojaXl.Cells[rowNumber, this._Param.facturaPmColumnaMensajes].Value == null ||
-                                !hojaXl.Cells[rowNumber, this._Param.facturaPmColumnaMensajes].Value.ToString().Equals("Integrado a GP"))
+                            if (hojaXl.Cells[rowNumber, _columnaMensajes].Value == null ||
+                                !hojaXl.Cells[rowNumber, _columnaMensajes].Value.ToString().Equals("Integrado a GP"))
                             {
-                                this.integraFacturaPM(hojaXl, rowNumber, sTimeStamp);
+                                if (facturasPm)
+                                    integraFacturaPM(hojaXl, rowNumber, "F"+sTimeStamp);
+                                else if (pagosPm)
+                                    integraPagoPM(hojaXl, rowNumber, "P"+sTimeStamp);
+                                else
+                                {
+                                    iError++;
+                                    sMensaje = "No ha ingresado un nombre válido para el archivo de parámetros al iniciar la aplicación. " + _DatosConexionDB.NombreArchivoParametros;
+                                }
+
                                 //this.integraFacturaPOP(hojaXl, rowNumber, sTimeStamp);
                                 iFacturaIniciaEn = rowNumber;
                                 rowNumber = _filaNuevaFactura - 1;
@@ -471,12 +546,12 @@ namespace IntegradorDeGP
                                     iFacturasIntegradas++;
                                     for (int ind = iFacturaIniciaEn; ind <= rowNumber; ind++)
                                     {
-                                        hojaXl.Cells[ind, this._Param.facturaPmColumnaMensajes].Value = "Integrado a GP";
+                                        hojaXl.Cells[ind, _columnaMensajes].Value = "Integrado a GP";
                                         iFilasIntegradas++;
                                     }
                                 }
                                 else
-                                    hojaXl.Cells[rowNumber, this._Param.facturaPmColumnaMensajes].Value = this.sMensaje;
+                                    hojaXl.Cells[rowNumber, _columnaMensajes].Value = this.sMensaje;
                             }
                             else
                             {
@@ -489,7 +564,7 @@ namespace IntegradorDeGP
                         OnProgreso(100, "----------------------------------------------");
                         this.sMensaje = "INTEGRACION FINALIZADA";
                         OnProgreso(100, this.sMensaje);
-                        OnProgreso(100, "Nuevas facturas integradas: " + iFacturasIntegradas.ToString());
+                        OnProgreso(100, "Nuevos documentos integrados: " + iFacturasIntegradas.ToString());
                         OnProgreso(100, "Nuevas filas integradas: " + iFilasIntegradas.ToString());
                         OnProgreso(100, "Número de filas con error: " + (iTotal - iFilasIntegradas - iAntesIntegradas).ToString());
                         OnProgreso(100, "Número de filas anteriormente integradas: " + iAntesIntegradas.ToString());
@@ -509,7 +584,7 @@ namespace IntegradorDeGP
             }
             catch (Exception errorGral)
             {
-                this.sMensaje = "Excepción encontrada al leer la carpeta En trabajo. " + errorGral.Message + " [IntegraComprasGP.procesaCarpetaEnTrabajo]";
+                this.sMensaje = "Excepción encontrada al leer la carpeta En trabajo. " + errorGral.Message + " " + errorGral.TargetSite.ToString();
                 iError++;
                 OnProgreso(0, this.sMensaje);                                      
             }

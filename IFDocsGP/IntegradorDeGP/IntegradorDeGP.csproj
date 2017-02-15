@@ -94,6 +94,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelGP.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PagoManualPM.cs" />
     <Compile Include="PM00200.cs">
       <DependentUpon>ModelGP.tt</DependentUpon>
     </Compile>
