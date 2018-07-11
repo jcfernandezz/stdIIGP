@@ -103,3 +103,9 @@ C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\gp.InterfacesPersonalizadas.winformGeneraFE.resources
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\gp.InterfacesPersonalizadas.Properties.Resources.resources
 C:\jcTii\Desarrollo\STD_InterfazIntegracionesGP\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGPapp.csproj.GenerateResource.Cache
+C:\jcTii\Desarrollo\STD_IntegracionesGPExcel\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegraFCGP.exe.config
+C:\jcTii\Desarrollo\STD_IntegracionesGPExcel\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.exe
+C:\jcTii\Desarrollo\STD_IntegracionesGPExcel\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.pdb
+C:\jcTii\Desarrollo\STD_IntegracionesGPBandejaExcel\stdIIGP\IFDocsGP\gpIntegraciones\bin\Release\IntegraFCGP.exe.config
+C:\jcTii\Desarrollo\STD_IntegracionesGPBandejaExcel\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.exe
+C:\jcTii\Desarrollo\STD_IntegracionesGPBandejaExcel\stdIIGP\IFDocsGP\gpIntegraciones\obj\Release\IntegraFCGP.pdb

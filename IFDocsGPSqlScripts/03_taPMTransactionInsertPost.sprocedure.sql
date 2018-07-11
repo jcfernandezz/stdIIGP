@@ -1,6 +1,3 @@
-
-
-/****** Object:  StoredProcedure [dbo].[taPMTransactionInsertPost]    Script Date: 22/07/2016 12:10:56 p. m. ******/
 SET ANSI_NULLS ON
 GO
 
